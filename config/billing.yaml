@@ -1,0 +1,6 @@
+# Your own rates, used only to estimate costs on the Billing page.
+vobiz_inr_per_min: null
+vobiz_platform_fee_inr_per_month: 500.0
+deepgram_usd_per_min: null
+gemini_inr_per_call: null
+usd_to_inr: null

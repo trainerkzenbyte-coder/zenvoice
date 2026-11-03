@@ -1,0 +1,59 @@
+{
+  "description": "Monthly salary must become LPA",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, Priya from Zenbyte here. Is this Divya?"
+    },
+    {
+      "role": "user",
+      "text": "Yes."
+    },
+    {
+      "role": "bot",
+      "text": "Is this a good time for a quick call about a Java role?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, tell me."
+    },
+    {
+      "role": "bot",
+      "text": "What is your current salary?"
+    },
+    {
+      "role": "user",
+      "text": "I get sixty five thousand per month."
+    },
+    {
+      "role": "bot",
+      "text": "And what are you expecting?"
+    },
+    {
+      "role": "user",
+      "text": "One lakh per month."
+    },
+    {
+      "role": "bot",
+      "text": "Notice period?"
+    },
+    {
+      "role": "user",
+      "text": "Thirty days."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Divya."
+    },
+    {
+      "role": "user",
+      "text": "Okay bye."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "current_ctc_lpa": 7.8,
+    "expected_ctc_lpa": 12,
+    "notice_period_days": 30
+  }
+}

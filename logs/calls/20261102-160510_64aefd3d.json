@@ -1,0 +1,195 @@
+{
+  "call_id": "e71b3a83-85e5-4189-b2a0-0d5964aefd3d",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "e71b3a83-85e5-4189-b2a0-0d5964aefd3d.wav",
+  "started_at": "2026-11-02 16:02:19",
+  "ended_at": "2026-11-02 16:05:10",
+  "duration_secs": 169,
+  "end_reason": "ended by agent (wrong_person)",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "candidate_confirmed": true,
+      "current_role": "Java backend developer",
+      "total_experience_years": 3,
+      "preferred_language": "english"
+    },
+    "summary": "The candidate confirmed their identity and role as a Java backend developer with 3 years of experience. The conversation digressed into explaining ATS and interview support, and the call eventually dropped before full screening could occur.",
+    "recruiter_notes": "Candidate was confused about ATS and interview support process. Call dropped near the end.",
+    "checks": [
+      "Priya ended the call as 'wrong_person' but the transcript reads as 'dropped', please verify"
+    ],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "16:05:06",
+        "action": "end_call",
+        "reason": "wrong_person"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 11,
+    "p50_ms": 2278,
+    "p95_ms": 2706,
+    "worst_ms": 2706,
+    "median_turn_wait_ms": 1528,
+    "median_llm_ms": 481,
+    "median_voice_ms": 263,
+    "first_audio_ms": 4455,
+    "turn_ms": [
+      2370,
+      1603,
+      1937,
+      2619,
+      2265,
+      2394,
+      2278,
+      2149,
+      2323,
+      2706,
+      2067
+    ],
+    "tokens": {
+      "prompt": 23647,
+      "completion": 1741,
+      "total": 25388,
+      "requests": 11
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793615545.3866525
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I do.",
+      "t": 1793615551.9912663
+    },
+    {
+      "role": "bot",
+      "text": "Great, sugi—since you're a Java backend developer with 3 years experience, right? I can text you the WhatsApp number to share your updated resume now. Shall I send the link?",
+      "t": 1793615553.2216156
+    },
+    {
+      "role": "user",
+      "text": "Yeah, you just said before that I want to clear all those details and all, all the details.",
+      "t": 1793615570.3181438
+    },
+    {
+      "role": "user",
+      "text": "Can we talk?",
+      "t": 1793615571.617961
+    },
+    {
+      "role": "bot",
+      "text": "Sure thing— we’ll polish your resume, submit you to relevant Java backend roles, and give live interview support for every round. Does that sound good?",
+      "t": 1793615572.0053594
+    },
+    {
+      "role": "user",
+      "text": "Okay, how will you polish my resume?",
+      "t": 1793615584.0004127
+    },
+    {
+      "role": "bot",
+      "text": "We review your current resume, highlight your Java backend achievements, and reformat it for ATS and recruiter focus. Does that make sense?",
+      "t": 1793615584.8964
+    },
+    {
+      "role": "user",
+      "text": "Okay, so ATS.",
+      "t": 1793615596.4686506
+    },
+    {
+      "role": "bot",
+      "text": "We add relevant Java backend keywords, clear headings, and simple formatting so the ATS can parse everything correctly. Anything specific you’d like us to highlight?",
+      "t": 1793615597.4010062
+    },
+    {
+      "role": "user",
+      "text": "80 rooms, what?",
+      "t": 1793615607.673245
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, we spoke at the same time—could you clarify what you meant by “80 rooms”?",
+      "t": 1793615608.6291733
+    },
+    {
+      "role": "user",
+      "text": "Not 80 rooms, I asked about 80 feet means what.",
+      "t": 1793615617.112329
+    },
+    {
+      "role": "bot",
+      "text": "80 feet is a length of about 24.4 metres. Does that answer your question?",
+      "t": 1793615618.230905
+    },
+    {
+      "role": "user",
+      "text": "No, no, I'm asking ATS. ATS means what?",
+      "t": 1793615627.6990151
+    },
+    {
+      "role": "bot",
+      "text": "ATS stands for Applicant Tracking System—a tool recruiters use to scan and organize resumes. Does that clear it up for you?",
+      "t": 1793615628.6310108
+    },
+    {
+      "role": "user",
+      "text": "Okay, it's an application tracking system.",
+      "t": 1793615637.2330377
+    },
+    {
+      "role": "bot",
+      "text": "Exactly, we’ll shape it so the ATS picks up your Java backend strengths. Shall I send you the WhatsApp link to share your updated resume now?",
+      "t": 1793615638.2757668
+    },
+    {
+      "role": "user",
+      "text": "Okay, how can you help me to attend the interview? So will you show the answers?",
+      "t": 1793615648.3517847
+    },
+    {
+      "role": "bot",
+      "text": "We’ll join you live during the interview, give you real‑time guidance on technical, manager and client rounds, and run mock sessions beforehand. Does that sound helpful?",
+      "t": 1793615649.3364182
+    },
+    {
+      "role": "user",
+      "text": "I don't know.",
+      "t": 1793615666.495247
+    },
+    {
+      "role": "bot",
+      "text": "Would you like us to start by sending your resume to our WhatsApp number and set up the interview‑support process?",
+      "t": 1793615667.5245452
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793615688.1026814
+    },
+    {
+      "role": "user",
+      "text": "Neha me.",
+      "t": 1793615705.1353867
+    },
+    {
+      "role": "bot",
+      "text": "Sorry for the trouble. Thank you, goodbye.",
+      "t": 1793615706.1132262
+    }
+  ]
+}

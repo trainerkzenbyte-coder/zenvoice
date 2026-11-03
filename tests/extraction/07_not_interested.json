@@ -1,0 +1,43 @@
+{
+  "description": "Happy in current job",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, this is Priya from Zenbyte. Am I speaking with Meena?"
+    },
+    {
+      "role": "user",
+      "text": "Yes."
+    },
+    {
+      "role": "bot",
+      "text": "I'm calling about a Java Developer role in Chennai. Are you open to exploring it?"
+    },
+    {
+      "role": "user",
+      "text": "No, sorry, I'm happy where I am. Not looking for a change."
+    },
+    {
+      "role": "bot",
+      "text": "I understand. Would you like to hear about future roles?"
+    },
+    {
+      "role": "user",
+      "text": "No thanks."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you for your time, Meena."
+    },
+    {
+      "role": "user",
+      "text": "Bye."
+    }
+  ],
+  "expected": {
+    "call_outcome": "not_interested",
+    "interested": "no",
+    "current_ctc_lpa": null,
+    "notice_period_days": null
+  }
+}

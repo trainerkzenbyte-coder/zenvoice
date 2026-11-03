@@ -1,0 +1,16 @@
+# Packages for the cloud server (Docker). No microphone/speaker support needed there.
+#
+# pipecat-ai is pinned to the version tested on the laptop (1.12.0), so the server runs
+# exactly the code you tested. Upgrade both files together, after testing on the laptop.
+pipecat-ai[deepgram,google,silero,websocket,sarvam]==1.12.0   # sarvam: speech-to-text + voice
+
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pyyaml
+httpx
+loguru
+tzdata
+psutil
+pypdf                     # Knowledge Base: read uploaded PDF documents

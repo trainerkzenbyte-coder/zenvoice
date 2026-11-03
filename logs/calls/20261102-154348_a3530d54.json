@@ -1,0 +1,195 @@
+{
+  "call_id": "33960ca2-0c91-43af-9843-0bf5a3530d54",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "33960ca2-0c91-43af-9843-0bf5a3530d54.wav",
+  "started_at": "2026-11-02 15:41:00",
+  "ended_at": "2026-11-02 15:43:48",
+  "duration_secs": 166,
+  "end_reason": "ended by silence (other)",
+  "outcome": {
+    "call_outcome": "completed",
+    "data": {
+      "candidate_confirmed": true,
+      "interested": "yes",
+      "current_role": "Java backend developer",
+      "total_experience_years": 3,
+      "expected_ctc_lpa": 15,
+      "notice_period_days": 90,
+      "preferred_language": "english",
+      "interest_score": 4
+    },
+    "summary": "Sugi confirmed they are a Java backend developer with 3 years of experience and a 90-day notice period. They expressed interest in the opportunity and expect 15 LPA. The recruiter instructed them to send their updated resume via WhatsApp.",
+    "recruiter_notes": "Candidate mentioned expected CTC as '15 years' initially before correcting to 15 LPA. Call ended abruptly at the end.",
+    "checks": [],
+    "user_sentiment": "positive",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "15:43:42",
+        "action": "end_call",
+        "reason": "silence"
+      }
+    ],
+    "ended_by": "silence"
+  },
+  "latency": {
+    "turns": 9,
+    "p50_ms": 2341,
+    "p95_ms": 3130,
+    "worst_ms": 3130,
+    "median_turn_wait_ms": 1413,
+    "median_llm_ms": 455,
+    "median_voice_ms": 278,
+    "first_audio_ms": 4478,
+    "turn_ms": [
+      2556,
+      2362,
+      2011,
+      2242,
+      2887,
+      3130,
+      2115,
+      2341,
+      2123
+    ],
+    "tokens": {
+      "prompt": 21605,
+      "completion": 1969,
+      "total": 23574,
+      "requests": 11
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793614265.3451533
+    },
+    {
+      "role": "user",
+      "text": "Okay, here.",
+      "t": 1793614274.5742404
+    },
+    {
+      "role": "bot",
+      "text": "Great, thanks for staying on. As I was saying, we help candidates with end‑to‑end job search, resume boost, automated applications and live interview support. Could you share your current role and how many years of experience you have?",
+      "t": 1793614275.9637053
+    },
+    {
+      "role": "user",
+      "text": "She says.",
+      "t": 1793614290.2948256
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, we spoke at the same time—what were you saying?",
+      "t": 1793614291.269396
+    },
+    {
+      "role": "user",
+      "text": "Actually, my current job is a Java backend developer and I have 3 years of experience.",
+      "t": 1793614297.447571
+    },
+    {
+      "role": "bot",
+      "text": "Since you’re a Java backend developer with 3 years of experience, right?",
+      "t": 1793614298.3895829
+    },
+    {
+      "role": "user",
+      "text": "Yes, sir.",
+      "t": 1793614304.7328672
+    },
+    {
+      "role": "bot",
+      "text": "Got it. What’s your notice period at your current company?",
+      "t": 1793614305.6308608
+    },
+    {
+      "role": "user",
+      "text": "Actually, I have 90 days of notice period.",
+      "t": 1793614313.433507
+    },
+    {
+      "role": "bot",
+      "text": "Understood. What’s your expected CTC for the next role?",
+      "t": 1793614314.355353
+    },
+    {
+      "role": "user",
+      "text": "My expected notice or NC will be around 15 years.",
+      "t": 1793614326.8441956
+    },
+    {
+      "role": "bot",
+      "text": "Got it. Just to confirm, you meant your expected CTC is around 15 LPA, right?",
+      "t": 1793614328.2788773
+    },
+    {
+      "role": "user",
+      "text": "Yeah yeah yeah correct.",
+      "t": 1793614341.2447505
+    },
+    {
+      "role": "bot",
+      "text": "Thanks, we’ll start optimizing your profile and look for suitable Java backend roles. Does that sound good to you?",
+      "t": 1793614343.1838102
+    },
+    {
+      "role": "user",
+      "text": "Ah yeah, sir, okay.",
+      "t": 1793614354.5096714
+    },
+    {
+      "role": "bot",
+      "text": "Do you have an updated resume we can start working on?",
+      "t": 1793614355.4716144
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I have updated my work. But today I want to update my recent post. I didn't update it yesterday.",
+      "t": 1793614365.7309215
+    },
+    {
+      "role": "bot",
+      "text": "Great, you can send the latest resume to our WhatsApp number. Shall I share the WhatsApp link with you now?",
+      "t": 1793614366.725877
+    },
+    {
+      "role": "user",
+      "text": "Too bad.",
+      "t": 1793614369.9465823
+    },
+    {
+      "role": "bot",
+      "text": "I’m sorry to hear that. Would another time work better for you?",
+      "t": 1793614371.0906177
+    },
+    {
+      "role": "user",
+      "text": "No no no, we can talk right now.",
+      "t": 1793614378.2098982
+    },
+    {
+      "role": "bot",
+      "text": "Sure, you can share your updated resume on WhatsApp now—just send it to the number I’ll text you. We won’t charge anything until you get an offer, and we’ll start applying to relevant Java backend roles right away.",
+      "t": 1793614379.192636
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793614406.0466967
+    },
+    {
+      "role": "bot",
+      "text": "It seems we got disconnected. We'll try you again later. Goodbye!",
+      "t": 1793614422.6818688
+    }
+  ]
+}

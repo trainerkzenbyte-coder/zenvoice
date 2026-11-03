@@ -1,0 +1,150 @@
+# Sprint 3: what Priya screens for, and what we extract after every call.
+# Edit freely. Field names should match your Google Sheet columns (Sprint 4).
+
+job:                                   # Inserted into the call prompt
+  title: "Java Developer"
+  company_client: ""                   # Leave empty to say just "our client"
+  location: "Chennai (hybrid, 3 days office)"
+  key_skills: "Java, Spring Boot, Microservices"
+  experience_range: "3 to 6 years"
+
+extraction:
+  model: "gemini-3.5-flash-lite"       # Post-call, so speed doesn't matter; ~Rs 0.2 per call
+  thinking_level: "low"                # A little reasoning helps unit conversion (monthly -> LPA)
+  timezone: "Asia/Kolkata"
+
+# How the call ended. Exactly one is chosen per call.
+call_outcomes:
+  completed: "Screening questions were asked and answered (fully or mostly)"
+  not_interested: "Candidate clearly declined the opportunity"
+  callback_requested: "Candidate asked to be called at another time"
+  wrong_person: "The person who answered is not the candidate"
+  language_barrier: "Candidate wants a language Priya cannot speak (e.g. Tamil)"
+  do_not_call: "Candidate asked never to be called again / remove their number"
+  voicemail: "Voicemail, IVR or an operator message; no human conversation"
+  dropped: "Call ended early before screening, for unclear reasons"
+
+# Data fields. type: string | number | integer | boolean | enum
+# Only filled when the candidate actually said it; otherwise left empty (never guessed).
+fields:
+  candidate_confirmed:
+    type: boolean
+    description: "The person confirmed they are the candidate being called"
+  interested:
+    type: enum
+    values: ["yes", "no", "maybe"]
+    description: "Interest in this job opportunity"
+  current_company:
+    type: string
+    description: "Current employer as the candidate said it"
+  current_role:
+    type: string
+    description: "Current job title or role"
+  total_experience_years:
+    type: number
+    min: 0
+    max: 45
+    description: "Total work experience in years. '4 years 6 months' = 4.5"
+  relevant_experience_years:
+    type: number
+    min: 0
+    max: 45
+    description: "Experience in the job's key skills, in years"
+  current_ctc_lpa:
+    type: number
+    min: 0.5
+    max: 300
+    description: "Current annual CTC in lakhs per annum. Monthly 65,000 = 7.8. '1.2 crore' = 120"
+  expected_ctc_lpa:
+    type: number
+    min: 0.5
+    max: 300
+    description: "Expected annual CTC in lakhs per annum. For a range like '10 to 11', use the higher value"
+  notice_period_days:
+    type: integer
+    min: 0
+    max: 180
+    description: "Notice period in days. 'Immediate joiner' = 0, '2 months' = 60"
+  serving_notice:
+    type: boolean
+    description: "Candidate has already resigned and is serving notice"
+  last_working_day:
+    type: string
+    description: "Last working day if serving notice, as YYYY-MM-DD when a date is given"
+  current_location:
+    type: string
+    description: "City the candidate lives or works in now"
+  open_to_relocation:
+    type: enum
+    values: ["yes", "no", "maybe"]
+    description: "Willing to work from the job location"
+  preferred_language:
+    type: enum
+    values: ["english", "hindi", "tamil", "other"]
+    description: "Language the candidate prefers or spoke most"
+  callback_time:
+    type: string
+    description: "When to call back, as YYYY-MM-DDTHH:MM in India time. 'Tomorrow after 6 pm' = next day 18:00"
+  interest_score:
+    type: integer
+    min: 1
+    max: 5
+    description: "1 = not interested, 3 = neutral, 5 = very keen"
+
+# Name Priya asks for in laptop and text tests (phone calls get it from make_call.py --name)
+test_candidate:
+  name: "Karthik"
+
+# Priya's first sentence, spoken the instant the candidate picks up (no AI wait).
+# {agent_name} and {company} come from config/agent.yaml; {candidate_name} from the call.
+# The AI continues the conversation from here. enabled: false = AI writes the greeting (slower).
+greeting:
+  mode: "user_first"
+  enabled: true
+  with_name: "Hello, this is {agent_name} from {company}. Am I speaking with {candidate_name}?"
+  without_name: "Hello, this is {agent_name} from {company}. May I know who I'm speaking with?"
+
+# Spoken only if Priya ends the call WITHOUT saying goodbye herself (rare safety net).
+# Leave a reason empty to hang up silently (e.g. voicemail).
+closing_lines:
+  completed: "Thank you for your time. A recruiter will share the next steps. Have a great day!"
+  not_interested: "No problem at all. Thank you for your time, have a great day!"
+  callback_requested: "Thank you, we'll call you back then. Have a good day!"
+  wrong_person: "Sorry for the trouble. Thank you, goodbye."
+  language_barrier: "Thank you, a colleague will call you back. Goodbye!"
+  do_not_call: "I'm sorry for the trouble. We won't call you again. Goodbye."
+  voicemail: ""
+  other: "Thank you for your time. Goodbye!"
+
+# Sprint 4: your Google Sheet columns and where each value comes from.
+sheet_columns:
+  Candidate Name: candidate_name        # from make_call.py --name / campaign list
+  Phone: phone                          # number dialled
+  Role: job.title                       # from the job block above
+  Total Exp: total_experience_years
+  Current CTC: current_ctc_lpa
+  Expected CTC: expected_ctc_lpa
+  Notice Period: notice_period_days
+  Outcome: call_outcome
+  Summary: summary
+  Callback Time: callback_time
+# Always added at the right (needed or useful): Call ID, Called At, Duration (s), Ended By, Recruiter Checks.
+# More sources you can map: current_company, current_role, relevant_experience_years, serving_notice,
+# last_working_day, current_location, open_to_relocation, preferred_language, interest_score, recruiter_notes.
+
+# Optional: how outcomes are written in the Outcome column (default: "Callback requested" style).
+sheet_outcome_labels:
+  completed: "Completed"
+  not_interested: "Not interested"
+  callback_requested: "Callback"
+  wrong_person: "Wrong person"
+  language_barrier: "Tamil / language callback"
+  do_not_call: "Do not call"
+  voicemail: "Voicemail / not reachable"
+  dropped: "Call dropped"
+
+
+# --- Add this at the very bottom of screening.yaml ---
+conversation:
+  contact_memory: true
+  natural_style: true

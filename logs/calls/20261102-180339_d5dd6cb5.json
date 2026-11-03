@@ -1,0 +1,162 @@
+{
+  "call_id": "25ecbf1a-eed1-4b77-a225-22d5d5dd6cb5",
+  "candidate_name": "sugi",
+  "phone": "918973964679",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "25ecbf1a-eed1-4b77-a225-22d5d5dd6cb5.wav",
+  "started_at": "2026-11-02 18:02:06",
+  "ended_at": "2026-11-02 18:03:39",
+  "duration_secs": 91,
+  "end_reason": "ended by agent (completed)",
+  "outcome": {
+    "call_outcome": "completed",
+    "data": {
+      "candidate_confirmed": true,
+      "current_role": "Full Stack Engineer",
+      "total_experience_years": 2,
+      "current_location": "Chennai",
+      "open_to_relocation": "yes",
+      "preferred_language": "english"
+    },
+    "summary": "Sugi is a Full Stack Engineer with 2 years of experience currently not working and located in Chennai. She is open to working in Chennai and the call completed screening her basic background.",
+    "recruiter_notes": "Candidate mentioned 2 years overall experience and 1 year career gap. She is currently not working.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "18:03:33",
+        "action": "end_call",
+        "reason": "completed"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 8,
+    "p50_ms": 2320,
+    "p95_ms": 3503,
+    "worst_ms": 3503,
+    "median_turn_wait_ms": 1511,
+    "median_llm_ms": 586,
+    "median_voice_ms": 262,
+    "first_audio_ms": 4512,
+    "turn_ms": [
+      3503,
+      2343,
+      2195,
+      3074,
+      2297,
+      2178,
+      2205,
+      3317
+    ],
+    "tokens": {
+      "prompt": 16564,
+      "completion": 2034,
+      "total": 18598,
+      "requests": 9
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793622730.7914581
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I'm.",
+      "t": 1793622737.4342487
+    },
+    {
+      "role": "bot",
+      "text": "Thanks. So like I was saying, we help candidates with end‑to‑end job search and live interview support. Could you share your current role and years of experience?",
+      "t": 1793622738.5326397
+    },
+    {
+      "role": "user",
+      "text": "Actually, I'm a full stack engineer.",
+      "t": 1793622753.7509425
+    },
+    {
+      "role": "bot",
+      "text": "Got it. How many years have you been working as a full‑stack engineer?",
+      "t": 1793622754.6826053
+    },
+    {
+      "role": "user",
+      "text": "I have 2 years of experience and 1 year of.",
+      "t": 1793622761.4474483
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, we spoke at the same time—so you have 2 years experience, and 1 year of what exactly?",
+      "t": 1793622762.6644511
+    },
+    {
+      "role": "user",
+      "text": "One year of career grade.",
+      "t": 1793622772.148334
+    },
+    {
+      "role": "bot",
+      "text": "Thanks for clarifying—so you have 2 years overall experience and 1 year at your current grade/level, right?Got it. What’s your preferred location for a new role?And what’s your notice period at your current job?Sorry about that—just to confirm, which city are you looking to work in?",
+      "t": 1793622773.2890558
+    },
+    {
+      "role": "user",
+      "text": "Okay. Yeah.",
+      "t": 1793622782.435945
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, we spoke at the same time—could you repeat what you were saying?",
+      "t": 1793622784.0494487
+    },
+    {
+      "role": "user",
+      "text": "It's",
+      "t": 1793622785.594409
+    },
+    {
+      "role": "bot",
+      "text": "Sure, which city are you targeting for your next role?",
+      "t": 1793622786.5734274
+    },
+    {
+      "role": "user",
+      "text": "I have one year of career gap.",
+      "t": 1793622788.5492308
+    },
+    {
+      "role": "bot",
+      "text": "Got it, thanks for letting me know about the gap. Which city are you looking to work in?",
+      "t": 1793622789.534764
+    },
+    {
+      "role": "user",
+      "text": "Anything, but Chennai is better for me.",
+      "t": 1793622800.2093625
+    },
+    {
+      "role": "bot",
+      "text": "Understood. What’s your notice period with your current employer?",
+      "t": 1793622801.314939
+    },
+    {
+      "role": "user",
+      "text": "I'm not working. I'm with one of the career captains. I'm not working.",
+      "t": 1793622812.0784855
+    },
+    {
+      "role": "bot",
+      "text": "Thank you for your time. A recruiter will share the next steps. Have a great day!",
+      "t": 1793622813.127882
+    }
+  ]
+}

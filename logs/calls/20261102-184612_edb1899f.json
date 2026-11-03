@@ -1,0 +1,254 @@
+{
+  "call_id": "da4961d3-601e-4eb0-9702-e26eedb1899f",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "da4961d3-601e-4eb0-9702-e26eedb1899f.wav",
+  "started_at": "2026-11-02 18:42:31",
+  "ended_at": "2026-11-02 18:46:12",
+  "duration_secs": 219,
+  "end_reason": "ended by agent (not_interested)",
+  "outcome": {
+    "call_outcome": "not_interested",
+    "data": {
+      "candidate_confirmed": true,
+      "interested": "no",
+      "current_role": "software engineer",
+      "total_experience_years": 3,
+      "current_location": "Pune",
+      "open_to_relocation": "no",
+      "preferred_language": "english"
+    },
+    "summary": "The candidate is a software engineer with 3 years of experience currently based in Pune. They are not interested in the opportunity as they cannot visit the office in Chennai or Coimbatore in person.",
+    "recruiter_notes": "Candidate is currently in Pune and unable to visit the Chennai or Coimbatore office for in-person document signing.",
+    "checks": [],
+    "user_sentiment": "negative",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "18:46:09",
+        "action": "end_call",
+        "reason": "not_interested"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 14,
+    "p50_ms": 2192,
+    "p95_ms": 3041,
+    "worst_ms": 3304,
+    "median_turn_wait_ms": 1363,
+    "median_llm_ms": 567,
+    "median_voice_ms": 264,
+    "first_audio_ms": 3512,
+    "turn_ms": [
+      2126,
+      2121,
+      2308,
+      2268,
+      2998,
+      2258,
+      733,
+      485,
+      518,
+      3304,
+      2355,
+      1974,
+      3041,
+      2098
+    ],
+    "tokens": {
+      "prompt": 74921,
+      "completion": 4665,
+      "total": 79586,
+      "requests": 16
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793625153.710487
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is Suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793625154.7662344
+    },
+    {
+      "role": "user",
+      "text": "Yeah, tell me.",
+      "t": 1793625161.303682
+    },
+    {
+      "role": "bot",
+      "text": "Great! Hi, I'm Suguna from Zenbyte Technologies. I’m calling about your job search—do you have a quick minute?",
+      "t": 1793625162.3389266
+    },
+    {
+      "role": "user",
+      "text": "Yeah, tell me.",
+      "t": 1793625171.832451
+    },
+    {
+      "role": "bot",
+      "text": "Okay, fine, fine. Could you tell me what your current role and tech stack are?",
+      "t": 1793625173.0193102
+    },
+    {
+      "role": "user",
+      "text": "I am a software engineer, software developer.",
+      "t": 1793625182.2498662
+    },
+    {
+      "role": "bot",
+      "text": "Got it. What tech stack are you working with?",
+      "t": 1793625183.3327098
+    },
+    {
+      "role": "user",
+      "text": "I personally deal with actually I'm a SAP developer. Do you have any vacancy for SAP developer?",
+      "t": 1793625196.3571525
+    },
+    {
+      "role": "bot",
+      "text": "Got it. We do have placements for SAP developers with our partner companies. How many years of total experience do you have, and where are you based right now?",
+      "t": 1793625197.6981091
+    },
+    {
+      "role": "user",
+      "text": "Actually, I have 3 years of experience and 1 year of career break actually.",
+      "t": 1793625212.1437502
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Got it. And where are you based right now?",
+      "t": 1793625213.1483557
+    },
+    {
+      "role": "user",
+      "text": "And my base location is Chennai, but my home town is Coimbatore.",
+      "t": 1793625217.1489158
+    },
+    {
+      "role": "bot",
+      "text": "So the reason for my call is, we are a placement consultancy, we place you in good companies with your expected CTC and location. Hope you understand what I’m saying. Okay?",
+      "t": 1793625218.2848682
+    },
+    {
+      "role": "user",
+      "text": "Exactly, yeah.",
+      "t": 1793625230.2510989
+    },
+    {
+      "role": "user",
+      "text": "You are a consultancy, not a company where I get a job, right?",
+      "t": 1793625235.7776203
+    },
+    {
+      "role": "bot",
+      "text": "Yeah, that's right—we’re a placement consultancy that connects you with companies, not the hiring company itself. So, to start, you just need to visit our office in Chennai or Coimbatore for one day to sign the agreement. Is that okay for you?",
+      "t": 1793625237.1058853
+    },
+    {
+      "role": "user",
+      "text": "Peraccan bottle.",
+      "t": 1793625237.7061725
+    },
+    {
+      "role": "user",
+      "text": "Okay, can you, so only in Chennai or Coimbatore only you have office?",
+      "t": 1793625256.5371983
+    },
+    {
+      "role": "user",
+      "text": "Can you tell me the office?",
+      "t": 1793625259.3660507
+    },
+    {
+      "role": "bot",
+      "text": "Sure, we have offices in Chennai and Coimbatore (and also Bangalore).  \n\n- Chennai: 3rd Floor, Ashwartha Tower, Plot no 26, 5th Main Rd, Vijaya Nagar, Velachery, Chennai 600042.  \n- Coimbatore: Opposite Vadavalli High School, Vadavalli, Coimbatore 641007.  \n\nIs visiting one of these locations okay for you?",
+      "t": 1793625260.5204453
+    },
+    {
+      "role": "user",
+      "text": "Yeah, no actually.",
+      "t": 1793625289.229895
+    },
+    {
+      "role": "bot",
+      "text": "Okay, just to confirm—would you be able to visit our Chennai or Coimbatore office for one day?",
+      "t": 1793625290.801861
+    },
+    {
+      "role": "user",
+      "text": "Because you know what, I'm in Pune, I cannot able to visit.",
+      "t": 1793625294.0576968
+    },
+    {
+      "role": "bot",
+      "text": "Ah, I see. The office visit is just to sign the agreement and hand over your original certificates—it's a standard security step, okay? Can you maybe arrange a one‑day visit to Chennai or Coimbatore?",
+      "t": 1793625295.158805
+    },
+    {
+      "role": "user",
+      "text": "One day visit is also not possible. Is there any possibility of signing the documents virtually?",
+      "t": 1793625314.3165116
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, we can’t do virtual signing; the agreement and original certificates need to be handled in person at our office. Would you be able to arrange a one‑day visit sometime soon?",
+      "t": 1793625315.5953145
+    },
+    {
+      "role": "user",
+      "text": "No, no, actually I'm not feeling well also and my mom also not feeling well actually. So could you please send the documents that I want to sign in by a courier and I will send all my original certificates and the documents signed documents courier to you back. Is that possible?",
+      "t": 1793625345.5067346
+    },
+    {
+      "role": "bot",
+      "text": "I understand, but the agreement and original certificates have to be signed and handed over in person at our office—courier isn’t possible, okay? Would you be able to arrange a one‑day visit once you’re feeling better?",
+      "t": 1793625346.5863435
+    },
+    {
+      "role": "user",
+      "text": "I",
+      "t": 1793625350.7847176
+    },
+    {
+      "role": "user",
+      "text": "Yes.",
+      "t": 1793625356.5254512
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Great—when would you be able to visit our Chennai or Coimbatore office?",
+      "t": 1793625357.6598585
+    },
+    {
+      "role": "user",
+      "text": "Continue continue.",
+      "t": 1793625359.925854
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Could you let me know a convenient day you could visit our Chennai or Coimbatore office?",
+      "t": 1793625360.9968812
+    },
+    {
+      "role": "user",
+      "text": "No.",
+      "t": 1793625368.4418879
+    },
+    {
+      "role": "bot",
+      "text": "No problem at all. Thank you for your time, have a great day!",
+      "t": 1793625369.6080453
+    }
+  ]
+}

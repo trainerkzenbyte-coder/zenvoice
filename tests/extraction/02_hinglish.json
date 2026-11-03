@@ -1,0 +1,79 @@
+{
+  "description": "Hinglish answers with Hindi numbers",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Rahul?"
+    },
+    {
+      "role": "user",
+      "text": "Haan ji, Rahul bol raha hoon."
+    },
+    {
+      "role": "bot",
+      "text": "Is it a good time to talk about a Java Developer role?"
+    },
+    {
+      "role": "user",
+      "text": "Haan haan, boliye."
+    },
+    {
+      "role": "bot",
+      "text": "Abhi aap kahan kaam kar rahe hain?"
+    },
+    {
+      "role": "user",
+      "text": "Abhi main TCS mein hoon, Java developer hoon."
+    },
+    {
+      "role": "bot",
+      "text": "Total experience kitna hai?"
+    },
+    {
+      "role": "user",
+      "text": "Saadhe chaar saal ka experience hai."
+    },
+    {
+      "role": "bot",
+      "text": "Current CTC kitna hai?"
+    },
+    {
+      "role": "user",
+      "text": "Current aath lakh hai per annum."
+    },
+    {
+      "role": "bot",
+      "text": "Aur expected?"
+    },
+    {
+      "role": "user",
+      "text": "Expected bara lakh chahiye."
+    },
+    {
+      "role": "bot",
+      "text": "Notice period?"
+    },
+    {
+      "role": "user",
+      "text": "Notice period do mahine ka hai."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Rahul, recruiter will call you with next steps."
+    },
+    {
+      "role": "user",
+      "text": "Theek hai, thank you."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "candidate_confirmed": true,
+    "current_company": "TCS",
+    "total_experience_years": 4.5,
+    "current_ctc_lpa": 8,
+    "expected_ctc_lpa": 12,
+    "notice_period_days": 60,
+    "preferred_language": "hindi"
+  }
+}

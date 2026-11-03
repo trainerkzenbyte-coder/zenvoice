@@ -1,0 +1,106 @@
+{
+  "description": "Clean English, every field given",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, this is Priya from Zenbyte. Am I speaking with Karthik?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, Karthik here."
+    },
+    {
+      "role": "bot",
+      "text": "Is this a good time for a two-minute call about a Java Developer role in Chennai?"
+    },
+    {
+      "role": "user",
+      "text": "Sure, go ahead."
+    },
+    {
+      "role": "bot",
+      "text": "Great. Are you open to exploring it?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, I'm interested."
+    },
+    {
+      "role": "bot",
+      "text": "Where are you working currently, and in what role?"
+    },
+    {
+      "role": "user",
+      "text": "I'm a senior software engineer at Infosys."
+    },
+    {
+      "role": "bot",
+      "text": "How much total experience do you have?"
+    },
+    {
+      "role": "user",
+      "text": "Five years total, and about four years in Java and Spring Boot."
+    },
+    {
+      "role": "bot",
+      "text": "What is your current CTC?"
+    },
+    {
+      "role": "user",
+      "text": "Nine point five lakhs per annum."
+    },
+    {
+      "role": "bot",
+      "text": "And your expected CTC?"
+    },
+    {
+      "role": "user",
+      "text": "I'm looking for around fourteen lakhs."
+    },
+    {
+      "role": "bot",
+      "text": "What is your notice period?"
+    },
+    {
+      "role": "user",
+      "text": "Sixty days."
+    },
+    {
+      "role": "bot",
+      "text": "Where are you based, and does Chennai work for you?"
+    },
+    {
+      "role": "user",
+      "text": "I'm in Chennai itself, so that's perfect."
+    },
+    {
+      "role": "bot",
+      "text": "So five years experience, nine point five current, fourteen expected, sixty days notice. Correct?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, correct."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Karthik, a recruiter will share next steps."
+    },
+    {
+      "role": "user",
+      "text": "Thanks, bye."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "candidate_confirmed": true,
+    "interested": "yes",
+    "current_company": "Infosys",
+    "total_experience_years": 5,
+    "relevant_experience_years": 4,
+    "current_ctc_lpa": 9.5,
+    "expected_ctc_lpa": 14,
+    "notice_period_days": 60,
+    "current_location": "Chennai",
+    "open_to_relocation": "yes"
+  }
+}

@@ -1,0 +1,293 @@
+{
+  "call_id": "ba692397-bffd-4665-bb62-e97c147692e7",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "ba692397-bffd-4665-bb62-e97c147692e7.wav",
+  "started_at": "2026-10-31 13:59:01",
+  "ended_at": "2026-10-31 14:03:46",
+  "duration_secs": 283,
+  "end_reason": "ended by agent (other)",
+  "outcome": {
+    "call_outcome": "callback_requested",
+    "data": {
+      "candidate_confirmed": true,
+      "total_experience_years": 3,
+      "relevant_experience_years": 3,
+      "current_location": "Chennai",
+      "preferred_language": "english"
+    },
+    "summary": "The candidate has 3 years of SAP experience, is currently on a career break based in Chennai, and was discussing the placement and interview-support services. The call ended abruptly as the candidate had another important call and asked to speak later.",
+    "recruiter_notes": "Candidate is currently on a career break and looking for an executive SAP role. She had questions about the live interview support process and requested a callback.",
+    "checks": [
+      "callback requested but no time given"
+    ],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "14:03:42",
+        "action": "end_call",
+        "reason": "other"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 18,
+    "p50_ms": 2285,
+    "p95_ms": 2949,
+    "worst_ms": 4726,
+    "median_turn_wait_ms": 1494,
+    "median_llm_ms": 533,
+    "median_voice_ms": 268,
+    "first_audio_ms": 2183,
+    "turn_ms": [
+      2087,
+      2049,
+      2628,
+      2305,
+      2089,
+      2891,
+      2824,
+      2189,
+      2073,
+      2262,
+      2949,
+      1650,
+      2381,
+      2265,
+      2310,
+      1511,
+      4726,
+      2640
+    ],
+    "tokens": {
+      "prompt": 43340,
+      "completion": 3817,
+      "total": 47157,
+      "requests": 20
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793435343.6442776
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793435344.983929
+    },
+    {
+      "role": "user",
+      "text": "Yeah, tell me.",
+      "t": 1793435351.6912696
+    },
+    {
+      "role": "bot",
+      "text": "Sure, we help with resume polishing, job applications and live interview support. Could you tell me how many years of experience you have?",
+      "t": 1793435352.6573431
+    },
+    {
+      "role": "user",
+      "text": "Would you please explain from first?",
+      "t": 1793435360.9871347
+    },
+    {
+      "role": "bot",
+      "text": "Sure thing—I'm suguna from Zenbyte. We assist with polishing your resume, automating job applications and giving live interview support to help you clear technical and manager rounds. Does that make sense?",
+      "t": 1793435361.9686434
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah, great. So you are a placement company, right? Not a real company where I can get a job, right?",
+      "t": 1793435380.368441
+    },
+    {
+      "role": "bot",
+      "text": "Exactly, we’re a placement and interview‑support service, not an employer. How many years of total experience do you have?",
+      "t": 1793435381.4538362
+    },
+    {
+      "role": "user",
+      "text": "Actually, I have 3 years of experience and 1 year of career break.",
+      "t": 1793435393.4397378
+    },
+    {
+      "role": "bot",
+      "text": "Got it. What’s your current role or primary tech focus?",
+      "t": 1793435394.3763015
+    },
+    {
+      "role": "user",
+      "text": "I didn't eat, Dad.",
+      "t": 1793435400.8185213
+    },
+    {
+      "role": "bot",
+      "text": "I’m sorry, could you repeat your primary tech focus or current role, please?",
+      "t": 1793435401.774744
+    },
+    {
+      "role": "user",
+      "text": "I want to get placed in the executive SAP role.",
+      "t": 1793435406.0551069
+    },
+    {
+      "role": "bot",
+      "text": "Got it, you’re targeting an executive SAP role. How many years of SAP experience do you have?",
+      "t": 1793435407.123192
+    },
+    {
+      "role": "user",
+      "text": "I have 3 years of experience, as I said before, and 1 year of career break in between.",
+      "t": 1793435418.7671413
+    },
+    {
+      "role": "bot",
+      "text": "Thanks. Where are you based right now?",
+      "t": 1793435419.7495842
+    },
+    {
+      "role": "user",
+      "text": "I'm actually in a rented house now in Chennai, but I'm a native Coimbatore.",
+      "t": 1793435430.8746839
+    },
+    {
+      "role": "bot",
+      "text": "Understood. What’s your current notice period, if any?",
+      "t": 1793435431.8126955
+    },
+    {
+      "role": "user",
+      "text": "Hello ma'am, okay ma'am.",
+      "t": 1793435439.6537426
+    },
+    {
+      "role": "bot",
+      "text": "Sure, could you let me know your current notice period?",
+      "t": 1793435440.6035848
+    },
+    {
+      "role": "user",
+      "text": "I'm not working. I'm not working today. I said no, one year of career break.",
+      "t": 1793435449.287235
+    },
+    {
+      "role": "bot",
+      "text": "Got it, no notice period needed. When would you be ready to start after your break?",
+      "t": 1793435450.3585982
+    },
+    {
+      "role": "user",
+      "text": "I am actively looking for a job only.",
+      "t": 1793435460.6207144
+    },
+    {
+      "role": "bot",
+      "text": "Great, you’re actively looking. Would you like us to begin by polishing your resume and Naukri profile?",
+      "t": 1793435461.6507025
+    },
+    {
+      "role": "user",
+      "text": "So before I could please explain your process perfectly.",
+      "t": 1793435472.8811512
+    },
+    {
+      "role": "bot",
+      "text": "We’ll start by polishing your resume and Naukri profile, then run our automated job‑application engine and tap our recruiter network to line up interviews. After that, we provide live interview support to help you clear technical, manager and client rounds. Does that sound good?",
+      "t": 1793435473.9391377
+    },
+    {
+      "role": "user",
+      "text": "Okay, how will you help me if you get stuck?",
+      "t": 1793435494.293179
+    },
+    {
+      "role": "user",
+      "text": "I mean, to get 3 recalls and all.",
+      "t": 1793435497.174557
+    },
+    {
+      "role": "bot",
+      "text": "If you hit a snag, we provide live interview support—real‑time guidance, feedback and strategies to help you clear technical, manager and client rounds. Does that sound clear?",
+      "t": 1793435497.709005
+    },
+    {
+      "role": "user",
+      "text": "Yeah, in what ways you would help me to crack the interview?",
+      "t": 1793435511.8798618
+    },
+    {
+      "role": "bot",
+      "text": "We set up mock interview sessions, give you targeted question banks and real‑time coaching during the actual interview so you can tackle technical, manager and client rounds confidently. Do you have an updated resume we can start polishing?",
+      "t": 1793435513.022489
+    },
+    {
+      "role": "user",
+      "text": "You will get question bank, but you will not help me really.",
+      "t": 1793435536.768171
+    },
+    {
+      "role": "bot",
+      "text": "I understand—beyond the question bank we give live coaching during the interview, reviewing your answers and guiding you step‑by‑step. Do you have an updated resume we can start polishing?",
+      "t": 1793435537.8079107
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah, but you were not sure answer while I'm doing the interview.",
+      "t": 1793435555.8006516
+    },
+    {
+      "role": "bot",
+      "text": "We’ll be with you live—via chat or quick calls—so you get instant feedback and guidance while you’re in the interview. Do you have an updated resume we can start polishing?",
+      "t": 1793435556.8217201
+    },
+    {
+      "role": "user",
+      "text": "No, no, I'm not sure.",
+      "t": 1793435575.6677983
+    },
+    {
+      "role": "user",
+      "text": "During the live interview.",
+      "t": 1793435577.3590407
+    },
+    {
+      "role": "bot",
+      "text": "Sure, no problem. Would you like us to help create a fresh resume based on your SAP experience and background?",
+      "t": 1793435577.7212129
+    },
+    {
+      "role": "user",
+      "text": "I asked for like.",
+      "t": 1793435588.4898148
+    },
+    {
+      "role": "user",
+      "text": "During the live interview, do you show me the answers to take or how?",
+      "t": 1793435595.5755997
+    },
+    {
+      "role": "bot",
+      "text": "During the live interview we guide you step‑by‑step—suggesting how to approach each question, reviewing your answers and giving instant feedback, rather than just sending you the exact answers. Would you like us to create a fresh resume for your SAP background to get started?",
+      "t": 1793435596.839729
+    },
+    {
+      "role": "user",
+      "text": "Okay, actually I want to. Okay, we'll talk later. Okay, I am getting a call, important call. I'll talk to you later, okay.",
+      "t": 1793435621.300741
+    },
+    {
+      "role": "bot",
+      "text": "Thank you for your time. Goodbye!",
+      "t": 1793435622.6143093
+    }
+  ]
+}

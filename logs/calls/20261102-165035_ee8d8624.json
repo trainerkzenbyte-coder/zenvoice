@@ -1,0 +1,170 @@
+{
+  "call_id": "c02ba4da-eed6-42da-9e30-4af8ee8d8624",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "c02ba4da-eed6-42da-9e30-4af8ee8d8624.wav",
+  "started_at": "2026-11-02 16:48:13",
+  "ended_at": "2026-11-02 16:50:35",
+  "duration_secs": 141,
+  "end_reason": "ended by silence (other)",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "candidate_confirmed": true,
+      "current_role": "DevOps engineer",
+      "total_experience_years": 3,
+      "notice_period_days": 92,
+      "current_location": "Chennai"
+    },
+    "summary": "The candidate confirmed their identity as a DevOps engineer with 3 years of experience based in Chennai and a notice period of 92 days. The call was disconnected before screening could be completed.",
+    "recruiter_notes": "Call disconnected during screening. Notice period stated as 92 days.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "16:50:29",
+        "action": "end_call",
+        "reason": "silence"
+      }
+    ],
+    "ended_by": "silence"
+  },
+  "latency": {
+    "turns": 7,
+    "p50_ms": 2236,
+    "p95_ms": 2373,
+    "worst_ms": 2373,
+    "median_turn_wait_ms": 1409,
+    "median_llm_ms": 476,
+    "median_voice_ms": 271,
+    "first_audio_ms": 4461,
+    "turn_ms": [
+      2290,
+      2055,
+      1438,
+      2023,
+      2236,
+      2373,
+      2271
+    ],
+    "tokens": {
+      "prompt": 28404,
+      "completion": 967,
+      "total": 29371,
+      "requests": 8
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793618297.8124344
+    },
+    {
+      "role": "user",
+      "text": "Yeah, turning.",
+      "t": 1793618304.6729376
+    },
+    {
+      "role": "bot",
+      "text": "Great! Hi, I'm Suguna from Zenbyte Technologies. Actually, I am calling regarding your job search. Do you have a quick minute?",
+      "t": 1793618305.7517173
+    },
+    {
+      "role": "user",
+      "text": "Yeah, please continue.",
+      "t": 1793618316.921559
+    },
+    {
+      "role": "bot",
+      "text": "Could you tell me what your current role and tech stack are?",
+      "t": 1793618317.8038566
+    },
+    {
+      "role": "user",
+      "text": "And.",
+      "t": 1793618323.0989246
+    },
+    {
+      "role": "user",
+      "text": "The way.",
+      "t": 1793618324.7327867
+    },
+    {
+      "role": "bot",
+      "text": "Your voice is breaking, I can't get you. Could you repeat your current role and tech stack?",
+      "t": 1793618325.0574958
+    },
+    {
+      "role": "user",
+      "text": "Sorry for that, I'm the box engineer.",
+      "t": 1793618333.2921653
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Got it, you're a Box Engineer. Could you tell me which technologies or languages you mainly work with in that role?",
+      "t": 1793618334.2895322
+    },
+    {
+      "role": "user",
+      "text": "Actually, I'm a DevOps engineer.",
+      "t": 1793618345.1011064
+    },
+    {
+      "role": "bot",
+      "text": "Nice. How many years of total experience do you have, and where are you based right now?",
+      "t": 1793618346.2400653
+    },
+    {
+      "role": "user",
+      "text": "I have 3 years of experience and my base location is Chennai.",
+      "t": 1793618358.0861046
+    },
+    {
+      "role": "user",
+      "text": "But my native is Coimbatore.",
+      "t": 1793618360.8219278
+    },
+    {
+      "role": "bot",
+      "text": "Ah, 3 years, Chennai base, got it. What's your current notice period?",
+      "t": 1793618361.9271808
+    },
+    {
+      "role": "user",
+      "text": "Ah, it's 92.",
+      "t": 1793618372.1279397
+    },
+    {
+      "role": "bot",
+      "text": "Ah, 92 days, that's fine! So the reason for my call is, we are a placement consultancy, we place you in good companies with your expected CTC and location. Hope you understand what I'm saying?",
+      "t": 1793618373.1983845
+    },
+    {
+      "role": "user",
+      "text": "Yeah.",
+      "t": 1793618387.6788511
+    },
+    {
+      "role": "bot",
+      "text": "So what we do is, we give you bulk HR mails and help you send bulk emails every single day. If you get calls from HRs, we’ll help you clear them, okay?",
+      "t": 1793618388.675703
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793618413.0848546
+    },
+    {
+      "role": "bot",
+      "text": "It seems we got disconnected. We'll try you again later. Goodbye!",
+      "t": 1793618429.9508703
+    }
+  ]
+}

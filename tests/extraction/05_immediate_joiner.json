@@ -1,0 +1,51 @@
+{
+  "description": "Laid off: notice period is zero",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, Priya from Zenbyte. Is this Sneha?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, this is Sneha."
+    },
+    {
+      "role": "bot",
+      "text": "What is your notice period?"
+    },
+    {
+      "role": "user",
+      "text": "I'm an immediate joiner, my company had layoffs last month."
+    },
+    {
+      "role": "bot",
+      "text": "I'm sorry to hear that. What was your last CTC?"
+    },
+    {
+      "role": "user",
+      "text": "Six point two lakhs."
+    },
+    {
+      "role": "bot",
+      "text": "And what are you expecting?"
+    },
+    {
+      "role": "user",
+      "text": "Around eight."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Sneha."
+    },
+    {
+      "role": "user",
+      "text": "Thank you."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "notice_period_days": 0,
+    "current_ctc_lpa": 6.2,
+    "expected_ctc_lpa": 8
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "description": "Operator message, no human",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Ravi?"
+    },
+    {
+      "role": "user",
+      "text": "The number you are calling is currently switched off. Please try again later."
+    }
+  ],
+  "expected": {
+    "call_outcome": "voicemail",
+    "candidate_confirmed": null
+  }
+}

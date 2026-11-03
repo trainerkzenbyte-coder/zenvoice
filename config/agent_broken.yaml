@@ -1,0 +1,89 @@
+# Editable agent settings. Secrets do NOT go here — they live in .env.
+
+agent:
+  name: "suguna"                    # Name the agent introduces itself with
+  company: "Zenbyte"                # Spoken in the greeting
+  language: "en-IN"                  # Sprint 6 adds ta-IN / hi-IN switching
+
+llm:
+  provider: "cerebras"
+  model: "gpt-oss-120b"
+  temperature: 0.35
+  max_output_tokens: 45
+  thinking_budget: 0              # Turns off thinking entirely for zero-delay voice streaming
+  first_word_timeout_secs: 10.0   # Matches updated resilience timeout
+  stall_timeout_secs: 15.0        # Prevents stream interruption
+
+stt:
+  provider: "deepgram"
+  model: "nova-3"
+  language: "en-IN"                 # Explicit Indian English (prevents garbled transcriptions)
+  smart_format: true
+  punctuate: true
+  endpointing: 500                  # Prevents cutting off mid-sentence
+  keyterms:
+    - "Zenbyte"
+    - "consultancy"
+    - "placement"
+    - "Karthik"
+    - "Ashwartha"
+    - "Velachery"
+    - "Vadavalli"
+    - "Coimbatore"
+    - "Bangalore"
+    - "MNC"
+    - "CTC"
+    - "LPA"
+    - "Naukri"
+    - "Google"
+    - "Amazon"
+    - "Pune"
+    - "virtual"
+  
+tts:
+  speed: 1.05
+  provider: "sarvam"
+  voice: "ritu"
+  sarvam_min_buffer: 30             # Bump buffer slightly to 30 to fix audio choppiness
+
+call_limits:
+  max_call_seconds: 1500            # Hard cap on call length (cost control)
+  silence_hangup_seconds: 15        # Hang up after this much silence
+  calling_hours: ["09:00", "21:00"] # Local time window for outbound calls
+  max_attempts: 3                   # Retries per candidate (Sprint 6)
+  max_turns: 250
+
+phone:                             # Sprint 2: Vobiz calls
+  ring_timeout_secs: 60            # Stop ringing after this many seconds
+
+turn:
+  mode: "smart"
+  vad_stop_secs: 0.40
+  smart_turn_max_wait_secs: 1.2
+  smart_turn_cpu_threads: 1
+  speech_timeout_secs: 0.60
+  interrupt_min_words: 3
+  vad_confidence: 0.50
+  vad_start_secs: 0.05
+  vad_min_volume: 0.25
+
+audio:
+  input_device_index: 1
+  output_device_index: null
+
+logging:
+  verbose: true
+
+data:
+  retention_days: 90
+
+recording:
+  enabled: true
+
+resume:
+  enabled: true
+  window_hours:48
+  prompt_file:"callback_screening.txt"
+  last_lines:8
+  outcomes:["dropped", "callback_requested", "other", "completed"]
+  greeting:"Hi {candidate_name}, it's {agent_name} from {company} again. Sorry, our call got cut earlier. Is now a good time to continue?"

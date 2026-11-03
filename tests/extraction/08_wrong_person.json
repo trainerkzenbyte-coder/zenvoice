@@ -1,0 +1,34 @@
+{
+  "description": "Brother answers",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Suresh?"
+    },
+    {
+      "role": "user",
+      "text": "No, I'm his brother. Suresh is not at home."
+    },
+    {
+      "role": "bot",
+      "text": "Is there a better time or number to reach him?"
+    },
+    {
+      "role": "user",
+      "text": "Try in the evening."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you so much."
+    },
+    {
+      "role": "user",
+      "text": "Okay."
+    }
+  ],
+  "expected": {
+    "call_outcome": "wrong_person",
+    "candidate_confirmed": false,
+    "total_experience_years": null
+  }
+}

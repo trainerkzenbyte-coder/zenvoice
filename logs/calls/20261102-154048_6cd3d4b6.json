@@ -1,0 +1,159 @@
+{
+  "call_id": "6b5fa36f-ff3a-4dd0-b4f1-878e6cd3d4b6",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "6b5fa36f-ff3a-4dd0-b4f1-878e6cd3d4b6.wav",
+  "started_at": "2026-11-02 15:38:42",
+  "ended_at": "2026-11-02 15:40:48",
+  "duration_secs": 124,
+  "end_reason": "ended by silence (other)",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "candidate_confirmed": true
+    },
+    "summary": "The call was abruptly disconnected after initial pleasantries and a brief explanation of the service. No screening questions were completed due to the early drop.",
+    "recruiter_notes": "Call got disconnected while explaining the service. Need to follow up later.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "15:39:57",
+        "action": "end_call_refused",
+        "reason": "not_interested"
+      },
+      {
+        "t": "15:40:05",
+        "action": "silence_watchdog",
+        "step": "retry"
+      },
+      {
+        "t": "15:40:42",
+        "action": "end_call",
+        "reason": "silence"
+      }
+    ],
+    "ended_by": "silence"
+  },
+  "latency": {
+    "turns": 5,
+    "p50_ms": 2782,
+    "p95_ms": 9046,
+    "worst_ms": 9046,
+    "median_turn_wait_ms": 1940,
+    "median_llm_ms": 443,
+    "median_voice_ms": 264,
+    "first_audio_ms": 3333,
+    "turn_ms": [
+      2134,
+      2782,
+      2703,
+      5048,
+      9046
+    ],
+    "tokens": {
+      "prompt": 16559,
+      "completion": 956,
+      "total": 17515,
+      "requests": 8
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793614125.0613465
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793614126.0119333
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah, tell me.",
+      "t": 1793614134.4969213
+    },
+    {
+      "role": "bot",
+      "text": "So like I was saying, we fine‑tune your resume, auto‑apply to DevOps jobs and join each interview live to give you prompts and feedback. Would you like me to walk you through a sample interview session?",
+      "t": 1793614135.3950891
+    },
+    {
+      "role": "user",
+      "text": "Hello, can you hear me?",
+      "t": 1793614142.5377617
+    },
+    {
+      "role": "bot",
+      "text": "Yes, I can hear you. What would you like to know?",
+      "t": 1793614143.5605757
+    },
+    {
+      "role": "user",
+      "text": "Yes, please explain what it's called.",
+      "t": 1793614153.5218296
+    },
+    {
+      "role": "bot",
+      "text": "We call it our live interview support – real‑time coaching while you’re on the call, with prompts, answer suggestions and instant feedback. Does that sound like what you’re looking for?",
+      "t": 1793614154.4223135
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah.",
+      "t": 1793614166.4938173
+    },
+    {
+      "role": "bot",
+      "text": "Typically we cover two technical rounds and a manager round, each lasting about 30‑45 minutes, with our coach guiding you throughout. Shall I send you a quick demo link so you can see the live support in action?",
+      "t": 1793614167.8871994
+    },
+    {
+      "role": "user",
+      "text": "Sorry, come again.",
+      "t": 1793614180.597413
+    },
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793614189.7890415
+    },
+    {
+      "role": "user",
+      "text": "Hello friends, come along, let's learn our letters with a phonics song.",
+      "t": 1793614196.5150223
+    },
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793614198.501329
+    },
+    {
+      "role": "bot",
+      "text": "It seems this call isn’t the right time. Thank you for your time—goodbye.",
+      "t": 1793614206.07352
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793614225.2908335
+    },
+    {
+      "role": "bot",
+      "text": "It seems we got disconnected. We'll try you again later. Goodbye!",
+      "t": 1793614242.185251
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793614242.6667886
+    }
+  ]
+}

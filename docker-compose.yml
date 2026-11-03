@@ -1,0 +1,53 @@
+# Cloud server: the voice agent + Caddy (automatic HTTPS). See deploy/DEPLOY.md.
+#   docker compose up -d --build     start / update
+#   docker compose logs -f agent     watch calls live
+#   docker compose restart agent     apply config/*.yaml changes
+
+services:
+  agent:
+    build: .
+    image: zenbyte-voice-agent
+    env_file: .env
+    environment:
+      HOST: 0.0.0.0
+      TZ: Asia/Kolkata
+      # The console is reached through an SSH tunnel (deploy/DEPLOY.md, "Open the console"), which
+      # arrives from Docker's network, not 127.0.0.1. ADMIN_TOKEN is still required, and Caddy
+      # (deploy/Caddyfile) refuses every console address from the internet.
+      DASHBOARD_ALLOW_REMOTE: "1"
+    volumes:
+      - ./config:/app/config         # the console edits these files
+      - ./logs:/app/logs             # call logs, server.log, Sheet outbox survive restarts
+      - ./campaigns:/app/campaigns   # Sprint 6: candidate lists and progress
+      - ./data:/app/data             # console: knowledge bases
+    expose:
+      - "8000"                       # Caddy reaches it on Docker's network
+    ports:
+      - "127.0.0.1:8000:8000"        # this server only (for the SSH tunnel), never the internet
+    restart: unless-stopped
+    stop_grace_period: 30s
+    logging:
+      driver: json-file
+      options: { max-size: "20m", max-file: "5" }
+
+  caddy:
+    image: caddy:2
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN:?Set DOMAIN in .env (e.g. voice.yourcompany.in)}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data             # HTTPS certificates (renewed automatically)
+      - caddy_config:/config
+    depends_on:
+      - agent
+    logging:
+      driver: json-file
+      options: { max-size: "10m", max-file: "3" }
+
+volumes:
+  caddy_data:
+  caddy_config:

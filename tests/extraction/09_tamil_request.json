@@ -1,0 +1,33 @@
+{
+  "description": "Wants to speak Tamil",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, this is Priya from Zenbyte. Am I speaking with Lakshmi?"
+    },
+    {
+      "role": "user",
+      "text": "Yes. Can you speak in Tamil?"
+    },
+    {
+      "role": "bot",
+      "text": "I can continue in English now, or a Tamil-speaking colleague can call you back. Which do you prefer?"
+    },
+    {
+      "role": "user",
+      "text": "Please ask a Tamil person to call me."
+    },
+    {
+      "role": "bot",
+      "text": "Sure, I will arrange that. Thank you!"
+    },
+    {
+      "role": "user",
+      "text": "Okay."
+    }
+  ],
+  "expected": {
+    "call_outcome": "language_barrier",
+    "preferred_language": "tamil"
+  }
+}

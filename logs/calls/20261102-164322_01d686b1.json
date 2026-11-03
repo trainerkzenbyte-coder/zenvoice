@@ -1,0 +1,340 @@
+{
+  "call_id": "a7de7dc3-0ddb-48b2-be9d-0cd701d686b1",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "a7de7dc3-0ddb-48b2-be9d-0cd701d686b1.wav",
+  "started_at": "2026-11-02 16:38:29",
+  "ended_at": "2026-11-02 16:43:22",
+  "duration_secs": 291,
+  "end_reason": "ended by agent (completed)",
+  "outcome": {
+    "call_outcome": "completed",
+    "data": {
+      "candidate_confirmed": true,
+      "interested": "yes",
+      "current_role": "backend software engineer",
+      "total_experience_years": 3.0,
+      "expected_ctc_lpa": 15.0,
+      "notice_period_days": 0,
+      "serving_notice": false,
+      "current_location": "Trichy",
+      "open_to_relocation": "no",
+      "preferred_language": "english",
+      "interest_score": 4
+    },
+    "summary": "The candidate is a backend software engineer with 3 years of experience currently on a break, making them an immediate joiner. They are targeting roles in Trichy and expect around 15 LPA. The recruiter explained the resume polishing and job search package.",
+    "recruiter_notes": "Candidate mentioned a 1-year career break and is currently available immediately. Targeting jobs specifically in Trichy.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "16:43:19",
+        "action": "end_call",
+        "reason": "completed"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 21,
+    "p50_ms": 2319,
+    "p95_ms": 3441,
+    "worst_ms": 6689,
+    "median_turn_wait_ms": 1412,
+    "median_llm_ms": 574,
+    "median_voice_ms": 263,
+    "first_audio_ms": 2294,
+    "turn_ms": [
+      2157,
+      2068,
+      2569,
+      2408,
+      2639,
+      2258,
+      3080,
+      2216,
+      2568,
+      2340,
+      2605,
+      2228,
+      2319,
+      3441,
+      1936,
+      2156,
+      2160,
+      6689,
+      2229,
+      3202,
+      2259
+    ],
+    "tokens": {
+      "prompt": 52333,
+      "completion": 4920,
+      "total": 57253,
+      "requests": 23
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793617711.5482929
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793617712.6322558
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah, tell me.",
+      "t": 1793617719.3450165
+    },
+    {
+      "role": "bot",
+      "text": "Sure, as I was saying, we help candidates with resume polishing, automated job applications and live interview support to guide you through technical and manager rounds. Does that sound okay?",
+      "t": 1793617720.3524003
+    },
+    {
+      "role": "user",
+      "text": "Okay, how will you help me? Can you please explain me the process?",
+      "t": 1793617736.437594
+    },
+    {
+      "role": "bot",
+      "text": "We start by polishing your resume and Naukri profile, then our system applies to relevant openings and our recruiter network lines up interviews. Once scheduled, we provide live guidance during each technical, manager or client round. Any particular step you’d like to dive into first?",
+      "t": 1793617737.6497986
+    },
+    {
+      "role": "user",
+      "text": "Yeah, how will you call this my recipe and all?",
+      "t": 1793617760.118564
+    },
+    {
+      "role": "bot",
+      "text": "Got it. We refer to the whole service as your job‑search strategy package, covering resume work, applications and interview support. Shall I walk you through the first step—resume polishing?",
+      "t": 1793617761.098023
+    },
+    {
+      "role": "user",
+      "text": "Yeah yeah, how many.",
+      "t": 1793617772.3609443
+    },
+    {
+      "role": "user",
+      "text": "Yeah, how many qualifications and naukri profile and all.",
+      "t": 1793617776.0403676
+    },
+    {
+      "role": "bot",
+      "text": "We’ll include every qualification you have in your Naukri profile—there’s no limit. Do you have your current Naukri profile handy?",
+      "t": 1793617777.4049609
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I have a Naukri profile. I want to know how will you pull this everything? What you will do in my Naukri profile and how will you update my resume and all? You are you will do it manually or how?",
+      "t": 1793617797.7581007
+    },
+    {
+      "role": "bot",
+      "text": "We’ll review your Naukri profile, pull all your qualifications and experience, manually refine your resume with targeted keywords, and then our system automatically applies the updated profile to suitable jobs. Does that make sense?",
+      "t": 1793617798.9076376
+    },
+    {
+      "role": "user",
+      "text": "Okay okay.",
+      "t": 1793617815.560085
+    },
+    {
+      "role": "user",
+      "text": "Hmm, hmm, hmm.",
+      "t": 1793617818.021116
+    },
+    {
+      "role": "bot",
+      "text": "Sure thing. Could you share your current role and the main technologies you work with?",
+      "t": 1793617818.9548776
+    },
+    {
+      "role": "user",
+      "text": "Actually, I am a backend software engineer.",
+      "t": 1793617828.7219372
+    },
+    {
+      "role": "bot",
+      "text": "Got it. Which backend technologies do you primarily work with?",
+      "t": 1793617829.935898
+    },
+    {
+      "role": "user",
+      "text": "Actually, I'm a main stock engineer now.",
+      "t": 1793617837.9210248
+    },
+    {
+      "role": "bot",
+      "text": "Got it, you’re a main‑stock engineer. Which technologies do you mainly work with in that role?",
+      "t": 1793617839.3036182
+    },
+    {
+      "role": "user",
+      "text": "I have a Java JavaScript.",
+      "t": 1793617848.6268349
+    },
+    {
+      "role": "user",
+      "text": "React, Angular, Next.js, everything I will work in that.",
+      "t": 1793617853.1818378
+    },
+    {
+      "role": "bot",
+      "text": "How many years of experience do you have in software engineering?",
+      "t": 1793617854.3238678
+    },
+    {
+      "role": "user",
+      "text": "Sorry, sorry, I'll check the voice.",
+      "t": 1793617861.1242049
+    },
+    {
+      "role": "bot",
+      "text": "No problem, take your time. Could you let me know your total years of experience?",
+      "t": 1793617862.6050334
+    },
+    {
+      "role": "user",
+      "text": "I said your voice is breaking.",
+      "t": 1793617871.806766
+    },
+    {
+      "role": "bot",
+      "text": "I’m sorry the voice is breaking. Would you like me to call you back at a more convenient time?",
+      "t": 1793617872.8977005
+    },
+    {
+      "role": "user",
+      "text": "No no no no, your voice is breaking actually.",
+      "t": 1793617882.5427618
+    },
+    {
+      "role": "bot",
+      "text": "Would you like me to call you back at a more convenient time?",
+      "t": 1793617883.5876622
+    },
+    {
+      "role": "user",
+      "text": "No, no, no, doctor.",
+      "t": 1793617892.8690212
+    },
+    {
+      "role": "bot",
+      "text": "Okay, would you prefer to continue now?",
+      "t": 1793617895.024326
+    },
+    {
+      "role": "user",
+      "text": "Yeah, we will continue.",
+      "t": 1793617901.4277563
+    },
+    {
+      "role": "bot",
+      "text": "Got it. How many years of experience do you have as a software engineer?",
+      "t": 1793617902.333801
+    },
+    {
+      "role": "user",
+      "text": "3 years of experience and 1 year of career break, I mean.",
+      "t": 1793617915.8189821
+    },
+    {
+      "role": "bot",
+      "text": "Sure. What’s your current notice period?",
+      "t": 1793617916.8577251
+    },
+    {
+      "role": "user",
+      "text": "Actually I am in break now.",
+      "t": 1793617923.3349998
+    },
+    {
+      "role": "bot",
+      "text": "Since you’re on a break, does that mean you’re available to start right away?",
+      "t": 1793617924.3516138
+    },
+    {
+      "role": "user",
+      "text": "Yeah.",
+      "t": 1793617934.996025
+    },
+    {
+      "role": "bot",
+      "text": "Understood. What’s your salary expectation for your next role?",
+      "t": 1793617935.9861581
+    },
+    {
+      "role": "user",
+      "text": "Actually around 15 LBA.",
+      "t": 1793617944.1640332
+    },
+    {
+      "role": "bot",
+      "text": "Got it. Which city or location are you targeting for your next role?",
+      "t": 1793617945.2619722
+    },
+    {
+      "role": "user",
+      "text": "Okay.",
+      "t": 1793617953.0135386
+    },
+    {
+      "role": "user",
+      "text": "Is it possible to get charged, sir?",
+      "t": 1793617955.6874022
+    },
+    {
+      "role": "user",
+      "text": "For this package.",
+      "t": 1793617957.2778149
+    },
+    {
+      "role": "bot",
+      "text": "We don’t charge any advance fees—payment is only due after you receive an offer or join a company. Which city are you targeting for your next role?",
+      "t": 1793617957.6260111
+    },
+    {
+      "role": "user",
+      "text": "I'm targeting actually my native is Trichy, I should say okay. So can I get the the job in Trichy itself?",
+      "t": 1793617975.9602168
+    },
+    {
+      "role": "bot",
+      "text": "We’ll focus on finding suitable backend roles in Trichy and begin polishing your resume and Naukri profile right away. I’ll send you a brief plan and next‑step details on WhatsApp shortly. Thanks for your time, and we’ll be in touch soon!",
+      "t": 1793617977.017182
+    },
+    {
+      "role": "user",
+      "text": "For this package.",
+      "t": 1793617978.2644472
+    },
+    {
+      "role": "bot",
+      "text": "Our package covers resume polishing, automated job applications and live interview support, and you only pay after you receive an offer. Does that work for you?",
+      "t": 1793617979.4427078
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I said I'm targeting and my native is Trichy, okay. I should say like, so can I get the job in Trichy itself?",
+      "t": 1793617998.573154
+    },
+    {
+      "role": "bot",
+      "text": "Thank you for your time. A recruiter will share the next steps. Have a great day!",
+      "t": 1793617999.6818068
+    }
+  ]
+}

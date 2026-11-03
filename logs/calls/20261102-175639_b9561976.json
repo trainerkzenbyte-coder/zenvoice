@@ -1,0 +1,81 @@
+{
+  "call_id": "5fda8813-b91f-46f9-99c1-105eb9561976",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "5fda8813-b91f-46f9-99c1-105eb9561976.wav",
+  "started_at": "2026-11-02 17:56:05",
+  "ended_at": "2026-11-02 17:56:39",
+  "duration_secs": 33,
+  "end_reason": "ended by candidate",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "preferred_language": "english"
+    },
+    "summary": "The call ended early after a brief language switch from Tamil to English. No screening questions were completed as the candidate asked the recruiter to continue the details.",
+    "recruiter_notes": "Candidate requested to switch to English and wanted information put directly, but the call dropped before screening could begin.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [],
+    "ended_by": "candidate"
+  },
+  "latency": {
+    "turns": 3,
+    "p50_ms": 2275,
+    "p95_ms": 2312,
+    "worst_ms": 2312,
+    "median_turn_wait_ms": 1358,
+    "median_llm_ms": 649,
+    "median_voice_ms": 268,
+    "first_audio_ms": 2842,
+    "turn_ms": [
+      2275,
+      2204,
+      2312
+    ],
+    "tokens": {
+      "prompt": 5903,
+      "completion": 484,
+      "total": 6387,
+      "requests": 3
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793622367.8436408
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793622369.0066974
+    },
+    {
+      "role": "user",
+      "text": "Yeah, Tamil.",
+      "t": 1793622375.4426079
+    },
+    {
+      "role": "bot",
+      "text": "Got it, we’ll chat in Tamil. \n\nஅப்படியே, நாங்கள் முன் பேசினபோது, உங்களுக்கு நேர்முகத்தில் ரியல்‑டைம் வழிகாட்டல், PDF‑ல் சுருக்கமான பதில்கள், மற்றும் மொக்‑இன்டர்வியூ வழங்குவோம். இது உங்களுக்கு பயனுள்ளதாக இருக்கும் என்று நினைக்கிறீர்களா?",
+      "t": 1793622376.8071556
+    },
+    {
+      "role": "user",
+      "text": "You can continue in English itself. Tell me and put it here. Put it here.",
+      "t": 1793622390.838694
+    },
+    {
+      "role": "bot",
+      "text": "Sure, we provide real‑time prompts and a concise PDF with suggested answers that you can glance at during the interview. I can share the PDF link on WhatsApp right now—does that work?",
+      "t": 1793622391.8669558
+    }
+  ]
+}

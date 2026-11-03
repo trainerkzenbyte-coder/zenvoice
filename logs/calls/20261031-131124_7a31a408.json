@@ -1,0 +1,47 @@
+{
+  "call_id": "1dd7eb56-9a45-4b1a-90a9-d9217a31a408",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "1dd7eb56-9a45-4b1a-90a9-d9217a31a408.wav",
+  "started_at": "2026-10-31 13:10:51",
+  "ended_at": "2026-10-31 13:11:24",
+  "duration_secs": 33,
+  "end_reason": "ended by candidate",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {},
+    "summary": "No response from the person called.",
+    "recruiter_notes": "",
+    "checks": [],
+    "extraction_model": null,
+    "actions": [],
+    "ended_by": "candidate"
+  },
+  "latency": {
+    "turns": 0,
+    "first_audio_ms": 4589,
+    "tokens": {
+      "prompt": 0,
+      "completion": 0,
+      "total": 0,
+      "requests": 0
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793432456.488739
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793432475.3608432
+    }
+  ]
+}

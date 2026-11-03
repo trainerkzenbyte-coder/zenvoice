@@ -1,0 +1,10 @@
+gemini_tier: "paid"
+# Sprint 6: how Priya works through a candidate list (scripts/run_campaign.py).
+# Calling hours come from config/agent.yaml -> call_limits.calling_hours.
+
+max_concurrent: 1            # calls at the same time. Gemini free tier: keep 1. Paid tier: 3 to 5
+gap_between_calls_secs: 10   # pause between starting two calls
+retry_gap_minutes: 180       # no answer / busy / voicemail: try again after this long
+error_retry_minutes: 30      # technical problem (Gemini, network): try again after this long (not counted as a try)
+max_attempts: 3              # tries per candidate before giving up (status "failed")
+max_callbacks: 2             # how many "call me later" requests we honour per candidate

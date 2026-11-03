@@ -1,0 +1,61 @@
+{
+  "description": "Already resigned, gives last working day",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Arun?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, speaking."
+    },
+    {
+      "role": "bot",
+      "text": "Are you open to a Java Developer role in Chennai?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, actually I've already resigned."
+    },
+    {
+      "role": "bot",
+      "text": "Oh nice. What is your last working day?"
+    },
+    {
+      "role": "user",
+      "text": "My last working day is November fifteenth."
+    },
+    {
+      "role": "bot",
+      "text": "And your current CTC?"
+    },
+    {
+      "role": "user",
+      "text": "Seven lakhs."
+    },
+    {
+      "role": "bot",
+      "text": "Expected?"
+    },
+    {
+      "role": "user",
+      "text": "Ten lakhs."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Arun, a recruiter will contact you."
+    },
+    {
+      "role": "user",
+      "text": "Sure, thanks."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "interested": "yes",
+    "serving_notice": true,
+    "last_working_day": "2026-11-15",
+    "current_ctc_lpa": 7,
+    "expected_ctc_lpa": 10
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "call_id": "85f6d894-3b21-4d9b-9e17-34f360dd5d99",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "85f6d894-3b21-4d9b-9e17-34f360dd5d99.wav",
+  "started_at": "2026-10-31 15:19:34",
+  "ended_at": "2026-10-31 15:20:04",
+  "duration_secs": 28,
+  "end_reason": "ended by candidate",
+  "outcome": {
+    "call_outcome": "wrong_person",
+    "data": {
+      "candidate_confirmed": false
+    },
+    "summary": "The call ended immediately after greeting as the person who answered was not the intended candidate.",
+    "recruiter_notes": "",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "15:19:38",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:38",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:39",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:39",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:40",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:41",
+        "action": "end_call_refused",
+        "reason": "completed"
+      },
+      {
+        "t": "15:19:41",
+        "action": "end_call_refused",
+        "reason": "completed"
+      }
+    ],
+    "ended_by": "candidate"
+  },
+  "latency": {
+    "turns": 2,
+    "p50_ms": 4220,
+    "p95_ms": 6074,
+    "worst_ms": 6074,
+    "median_turn_wait_ms": 1351,
+    "median_llm_ms": 2605,
+    "median_voice_ms": 263,
+    "first_audio_ms": 6185,
+    "turn_ms": [
+      6074,
+      2365
+    ],
+    "tokens": {
+      "prompt": 17775,
+      "completion": 1470,
+      "total": 19245,
+      "requests": 9
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Okay, we're going home.",
+      "t": 1793440177.03798
+    },
+    {
+      "role": "bot",
+      "text": "Sure, take care! Goodbye.",
+      "t": 1793440181.9870226
+    },
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793440198.3473864
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is Suguna from Zenbyte. Am I speaking with Sugi?",
+      "t": 1793440199.6440246
+    }
+  ]
+}

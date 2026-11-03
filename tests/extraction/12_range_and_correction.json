@@ -1,0 +1,60 @@
+{
+  "description": "Range for expected CTC; corrects experience",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, this is Priya from Zenbyte. Is this Priyanka?"
+    },
+    {
+      "role": "user",
+      "text": "Yes."
+    },
+    {
+      "role": "bot",
+      "text": "How much total experience do you have?"
+    },
+    {
+      "role": "user",
+      "text": "Around three years. Actually no, three and a half years."
+    },
+    {
+      "role": "bot",
+      "text": "Current CTC?"
+    },
+    {
+      "role": "user",
+      "text": "Seven point five."
+    },
+    {
+      "role": "bot",
+      "text": "Expected CTC?"
+    },
+    {
+      "role": "user",
+      "text": "Somewhere between ten to eleven lakhs."
+    },
+    {
+      "role": "bot",
+      "text": "Notice period?"
+    },
+    {
+      "role": "user",
+      "text": "Forty five days."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Priyanka."
+    },
+    {
+      "role": "user",
+      "text": "Thanks."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "total_experience_years": 3.5,
+    "current_ctc_lpa": 7.5,
+    "expected_ctc_lpa": 11,
+    "notice_period_days": 45
+  }
+}

@@ -1,0 +1,85 @@
+{"t": "2026-10-31 16:55:31", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/auth/users"}
+{"t": "2026-10-31 16:55:31", "user": "owner", "ip": "172.18.0.1", "action": "ADD USER", "detail": "sugi (admin)"}
+{"t": "2026-10-31 17:07:25", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 17:07:27", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 17:07:47", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 17:08:21", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 17:08:22", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 17:12:20", "user": "sugi", "ip": "223.237.184.193", "action": "LOGIN BLOCKED", "detail": ""}
+{"t": "2026-10-31 17:14:01", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/auth/users"}
+{"t": "2026-10-31 17:14:11", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/auth/users"}
+{"t": "2026-10-31 17:14:11", "user": "owner", "ip": "172.18.0.1", "action": "ADD USER", "detail": "suguna (recruiter)"}
+{"t": "2026-10-31 17:14:32", "user": "suguna", "ip": "223.237.184.193", "action": "LOGIN", "detail": ""}
+{"t": "2026-10-31 17:16:07", "user": "suguna", "ip": "110.226.113.95", "action": "LOGIN", "detail": ""}
+{"t": "2026-10-31 17:16:43", "user": "suguna", "ip": "110.226.113.95", "action": "POST", "detail": "/api/call"}
+{"t": "2026-10-31 17:30:41", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/auth/users"}
+{"t": "2026-10-31 17:30:41", "user": "owner", "ip": "172.18.0.1", "action": "ADD USER", "detail": "sounder (recruiter)"}
+{"t": "2026-10-31 21:22:08", "user": "suguna", "ip": "223.237.185.154", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-10-31 21:52:42", "user": "suguna", "ip": "106.195.38.93", "action": "LOGIN", "detail": ""}
+{"t": "2026-10-31 21:53:05", "user": "suguna", "ip": "106.195.38.93", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 12:41:30", "user": "suguna", "ip": "110.226.113.95", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-02 12:41:39", "user": "suguna", "ip": "110.226.113.95", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-02 12:41:51", "user": "suguna", "ip": "110.226.113.95", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-02 12:42:12", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/auth/users/sounder"}
+{"t": "2026-11-02 12:42:34", "user": "sounder", "ip": "110.226.113.95", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-02 12:42:57", "user": "sounder", "ip": "110.226.113.95", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-02 12:43:32", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/f18a5b92-b053-4a69-b881-9279f8d83ef5/recording"}
+{"t": "2026-11-02 14:13:18", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 14:16:02", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/56319b5a-1e65-425b-bc2a-cfefdaf11243/recording"}
+{"t": "2026-11-02 15:31:27", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 15:33:04", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 15:38:30", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 15:40:42", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/live/6b5fa36f-ff3a-4dd0-b4f1-878e6cd3d4b6/hangup"}
+{"t": "2026-11-02 15:40:47", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/live/6b5fa36f-ff3a-4dd0-b4f1-878e6cd3d4b6/hangup"}
+{"t": "2026-11-02 15:40:53", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:02:13", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:15:50", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:29:40", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:29:55", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:30:27", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:32:50", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:38:21", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:44:29", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:47:52", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:55:45", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 16:59:43", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 17:23:38", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 17:24:38", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 17:27:37", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 17:27:59", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 17:33:54", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/babaeebb-0da6-4710-bd14-d206c8bf94c1/recording"}
+{"t": "2026-11-02 17:55:59", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:01:13", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:01:33", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:02:01", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:04:39", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/agents/save"}
+{"t": "2026-11-02 18:06:46", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/25ecbf1a-eed1-4b77-a225-22d5d5dd6cb5/recording"}
+{"t": "2026-11-02 18:16:01", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/25ecbf1a-eed1-4b77-a225-22d5d5dd6cb5/recording"}
+{"t": "2026-11-02 18:16:36", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/25ecbf1a-eed1-4b77-a225-22d5d5dd6cb5/recording"}
+{"t": "2026-11-02 18:16:44", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:18:00", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs"}
+{"t": "2026-11-02 18:18:05", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:18:42", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/upload"}
+{"t": "2026-11-02 18:18:45", "user": "owner", "ip": "172.18.0.1", "action": "PUT", "detail": "/api/kbs/kb_d085f61973/sources/src_03d2feff35"}
+{"t": "2026-11-02 18:18:46", "user": "owner", "ip": "172.18.0.1", "action": "PUT", "detail": "/api/kbs/kb_d085f61973/sources/src_03d2feff35"}
+{"t": "2026-11-02 18:20:30", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:21:17", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:22:33", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:30:19", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:30:41", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:41:22", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-02 18:42:17", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sync"}
+{"t": "2026-11-02 18:42:25", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-02 18:46:28", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/babaeebb-0da6-4710-bd14-d206c8bf94c1/recording"}
+{"t": "2026-11-02 19:06:26", "user": "owner", "ip": "172.18.0.1", "action": "GET", "detail": "/api/calls/da4961d3-601e-4eb0-9702-e26eedb1899f/recording"}
+{"t": "2026-11-02 19:13:23", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/agents/save"}
+{"t": "2026-11-03 11:24:48", "user": "suguna", "ip": "110.226.112.232", "action": "LOGIN FAILED", "detail": ""}
+{"t": "2026-11-03 12:31:49", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-03 12:32:19", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-03 12:42:08", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-03 12:59:52", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sources"}
+{"t": "2026-11-03 13:00:08", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/kbs/kb_d085f61973/sync"}
+{"t": "2026-11-03 13:00:16", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-03 13:04:37", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/call"}
+{"t": "2026-11-03 14:19:36", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/agents/save"}
+{"t": "2026-11-03 14:20:20", "user": "owner", "ip": "172.18.0.1", "action": "POST", "detail": "/api/agents/save"}

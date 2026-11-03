@@ -1,0 +1,24 @@
+{
+  "description": "Asks to be removed",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Ganesh?"
+    },
+    {
+      "role": "user",
+      "text": "Please stop calling me. Remove my number from your list."
+    },
+    {
+      "role": "bot",
+      "text": "I'm sorry for the trouble. We will not call you again."
+    },
+    {
+      "role": "user",
+      "text": "Fine."
+    }
+  ],
+  "expected": {
+    "call_outcome": "do_not_call"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "call_id": "f18a5b92-b053-4a69-b881-9279f8d83ef5",
+  "candidate_name": "Thangavel",
+  "phone": "919003556402",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "f18a5b92-b053-4a69-b881-9279f8d83ef5.wav",
+  "started_at": "2026-10-31 21:53:31",
+  "ended_at": "2026-10-31 21:57:03",
+  "duration_secs": 211,
+  "end_reason": "ended by agent (callback_requested)",
+  "outcome": {
+    "call_outcome": "callback_requested",
+    "data": {
+      "candidate_confirmed": true,
+      "current_role": "Java Developer",
+      "total_experience_years": 3,
+      "notice_period_days": 90,
+      "current_location": "Coimbatore",
+      "preferred_language": "english",
+      "callback_time": "2026-11-01T14:00"
+    },
+    "summary": "Thangavel confirmed his identity and stated he has 3 years of experience as a Java Developer based in Coimbatore with a 3-month notice period. He asked to be called back tomorrow afternoon at 2 PM as he needed more time to understand the placement consultancy's payment terms.",
+    "recruiter_notes": "Candidate asked about payment and salary details, which the recruiter stated would be shared on WhatsApp by the senior team.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "21:56:56",
+        "action": "schedule_callback",
+        "callback_time": "2026-11-01T14:00",
+        "spoken": "tomorrow afternoon 2 PM",
+        "language": null
+      },
+      {
+        "t": "21:56:56",
+        "action": "tool_text_leak",
+        "text": "{\"name\":\"end_call\",\"arguments\":{\"reason\":\"callback_requested\"}}"
+      },
+      {
+        "t": "21:56:56",
+        "action": "end_call",
+        "reason": "callback_requested"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 17,
+    "p50_ms": 2223,
+    "p95_ms": 2459,
+    "worst_ms": 2955,
+    "median_turn_wait_ms": 1350,
+    "median_llm_ms": 544,
+    "median_voice_ms": 260,
+    "first_audio_ms": 4498,
+    "turn_ms": [
+      2119,
+      2223,
+      2340,
+      1980,
+      2364,
+      2356,
+      2100,
+      2262,
+      2016,
+      2113,
+      2261,
+      2214,
+      2274,
+      2459,
+      2095,
+      1979,
+      2955
+    ],
+    "tokens": {
+      "prompt": 72249,
+      "completion": 3509,
+      "total": 75758,
+      "requests": 19
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with Thangavel?",
+      "t": 1793463816.089774
+    },
+    {
+      "role": "user",
+      "text": "Yes, yes.",
+      "t": 1793463822.7248654
+    },
+    {
+      "role": "bot",
+      "text": "Great! Hi, I'm Suguna from Zenbyte Technologies. Actually, I am calling regarding your job search. Do you have a quick minute?",
+      "t": 1793463823.7447429
+    },
+    {
+      "role": "user",
+      "text": "Yes, Madam.",
+      "t": 1793463826.233335
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Could you tell me what your current role and tech stack are?",
+      "t": 1793463827.2450666
+    },
+    {
+      "role": "user",
+      "text": "Java double, sir.",
+      "t": 1793463837.9792166
+    },
+    {
+      "role": "bot",
+      "text": "Got it. How many years of total experience do you have, and where are you based right now?",
+      "t": 1793463839.2051399
+    },
+    {
+      "role": "user",
+      "text": "3 years.",
+      "t": 1793463848.2529025
+    },
+    {
+      "role": "bot",
+      "text": "And which city are you based in?",
+      "t": 1793463849.194952
+    },
+    {
+      "role": "user",
+      "text": "Tell me again.",
+      "t": 1793463860.8287046
+    },
+    {
+      "role": "bot",
+      "text": "Which city are you based in?",
+      "t": 1793463862.0655792
+    },
+    {
+      "role": "user",
+      "text": "Yeah yeah yeah.",
+      "t": 1793463866.0394635
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I'm going to.",
+      "t": 1793463868.0925803
+    },
+    {
+      "role": "bot",
+      "text": "Your voice is breaking, I can't get you. Which city are you based in?",
+      "t": 1793463869.4556987
+    },
+    {
+      "role": "user",
+      "text": "Yes, Coimbatore, Coimbatore.",
+      "t": 1793463875.8186946
+    },
+    {
+      "role": "bot",
+      "text": "What's your current notice period?",
+      "t": 1793463876.8667915
+    },
+    {
+      "role": "user",
+      "text": "Uh,",
+      "t": 1793463883.712486
+    },
+    {
+      "role": "user",
+      "text": "Only 3 months.",
+      "t": 1793463885.5798469
+    },
+    {
+      "role": "bot",
+      "text": "Ah, 3 months, that's fine! So the reason for my call is, we are a placement consultancy, we place you in good companies with your expected CTC and location. Hope you understand what I'm saying?",
+      "t": 1793463886.625273
+    },
+    {
+      "role": "user",
+      "text": "Yeah yeah.",
+      "t": 1793463899.1677709
+    },
+    {
+      "role": "bot",
+      "text": "So what we do is, we give you bulk HR mails and help you send daily emails. If you get calls from HRs, we’ll help you clear them, okay?",
+      "t": 1793463900.2056987
+    },
+    {
+      "role": "user",
+      "text": "Okay okay.",
+      "t": 1793463911.0275831
+    },
+    {
+      "role": "bot",
+      "text": "And our backend team will support you fully—answers appear on your screen, you just read and reply to the HR, pretty simple, right?One more big advantage: no limit on how many interviews you can attend, and you don’t pay anything before getting placed, okay?To start, you just need to visit our office in Coimbatore for one day to sign the agreement. Is that okay for you?So tell me honestly, are you interested in moving forward with us?",
+      "t": 1793463912.130822
+    },
+    {
+      "role": "user",
+      "text": "What is difference?",
+      "t": 1793463932.9303548
+    },
+    {
+      "role": "bot",
+      "text": "We give you live interview support and you only pay after you receive an offer, unlike agencies that charge fees up front. Okay?",
+      "t": 1793463934.4126513
+    },
+    {
+      "role": "user",
+      "text": "What is Shakti?",
+      "t": 1793463946.2854114
+    },
+    {
+      "role": "bot",
+      "text": "I’m not aware of the Shakti details, but our senior team can share that with you on WhatsApp. Shall I have them send you the info?",
+      "t": 1793463947.432171
+    },
+    {
+      "role": "user",
+      "text": "Payment, payment, what payment?",
+      "t": 1793463957.4820778
+    },
+    {
+      "role": "bot",
+      "text": "We offer two ways to pay: you can pay the full fee shortly after you receive the offer letter, or you can choose an EMI plan where the amount is deducted monthly from your take‑home salary. Does that sound okay for you?",
+      "t": 1793463958.5661361
+    },
+    {
+      "role": "user",
+      "text": "How much is the salary?",
+      "t": 1793463975.3935885
+    },
+    {
+      "role": "bot",
+      "text": "I don’t have the exact salary figure—it varies by role and company, and our senior team will share the details on WhatsApp. So, are you interested in moving forward with us?",
+      "t": 1793463976.4546967
+    },
+    {
+      "role": "user",
+      "text": "Okay ma'am, what's your good name?",
+      "t": 1793463990.0998437
+    },
+    {
+      "role": "bot",
+      "text": "I'm Suguna. So, are you interested in moving forward with us?",
+      "t": 1793463991.5097926
+    },
+    {
+      "role": "user",
+      "text": "I call you after some time.",
+      "t": 1793464000.0290914
+    },
+    {
+      "role": "bot",
+      "text": "Sure, could you tell me a convenient day and time for me to call you back?",
+      "t": 1793464001.0857394
+    },
+    {
+      "role": "user",
+      "text": "Tomorrow tomorrow.",
+      "t": 1793464007.9526417
+    },
+    {
+      "role": "bot",
+      "text": "Which time tomorrow works best for you?",
+      "t": 1793464008.9403028
+    },
+    {
+      "role": "user",
+      "text": "Afternoon 2 PM.",
+      "t": 1793464014.7697194
+    },
+    {
+      "role": "bot",
+      "text": "Got it, I’ll call you tomorrow at 2 PM. Thanks for your time, Thangavel. Goodbye!{\"name\":\"end_call\",\"arguments\":{\"reason\":\"callback_requested\"}}",
+      "t": 1793464016.7018845
+    }
+  ]
+}

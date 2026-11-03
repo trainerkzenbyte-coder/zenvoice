@@ -1,0 +1,17 @@
+{
+  "description": "Answers then line drops",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is Priya from Zenbyte. Am I speaking with Ajay?"
+    },
+    {
+      "role": "user",
+      "text": "Hello? Hello? I can't hear you properly."
+    }
+  ],
+  "expected": {
+    "call_outcome": "dropped",
+    "total_experience_years": null
+  }
+}

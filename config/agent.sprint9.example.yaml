@@ -1,0 +1,52 @@
+# Sprint 9 settings. You normally set these in the console (Agents -> open the agent), which
+# writes them into config/agent.yaml for you. This file is only a reference; it is not read.
+
+llm:
+  provider: "groq"
+  model: "openai/gpt-oss-20b"
+  reasoning_effort: "low"
+  max_history_messages: 24         # rolling window for long calls (older turns -> one short note)
+
+knowledge:
+  max_chars: 12000                 # knowledge base text pinned in the prompt
+
+conversation:
+  natural_style: true              # short human turns, quick acknowledgements, no re-asking
+  contact_memory: true             # use the last call (14 days) with this number
+  deflect_line: "That's a good question. My team will reach out to you with those details in the next step."
+  off_limits:                      # topics the agent must not discuss (it says deflect_line instead)
+    - "salary, fees or payment details beyond what the knowledge base says"
+    - "legal, visa, tax or medical advice"
+    - "guarantees of a job, offer, interview result or placement"
+    - "other candidates or other companies' internal information"
+    - "personal questions about you, the recruiter or the team"
+    - "politics, religion or anything offensive"
+    - "anything not covered in this script or the knowledge base"
+
+transfer:                          # transfer_call function (Vobiz)
+  enabled: true
+  number: "919876543210"           # recruiter
+  mode: "warm"                     # warm = recruiter hears a briefing first | cold
+  announce: "Sure, please stay on the line. I'm connecting you to our recruiter now."
+  unavailable: "Sorry, our recruiter couldn't take the call right now. They will call you back shortly. Thank you!"
+  ring_timeout_secs: 25
+
+call_limits:
+  silence_hangup_seconds: 10       # silence before each reminder
+  reminder_count: 1                # reminders before hanging up (Retell: "Reminder message frequency")
+  reminder_line: "Hello, are you still there?"
+
+turn:
+  vad_stop_secs: 0.25              # Response wait time (fast but safe with the smart turn model)
+  smart_turn_max_wait_secs: 0.6    # max extra wait when a sentence sounds unfinished
+  interrupt_min_words: 2           # Interruption sensitivity (with vad_confidence)
+
+tts:
+  pronunciation:                   # spelled the way the voice should say it
+    - {word: "Zenbyte", say: "Zen byte"}
+    - {word: "CTC", say: "C T C"}
+
+stt:
+  provider: "deepgram"             # or "deepgram_flux" (fastest turn-taking, English only)
+  language: "en-IN"                # Indian English (most accurate for English calls)
+  keyterms: ["Zenbyte", "Java", "CTC", "notice period", "Chennai", "Coimbatore", "Velachery"]

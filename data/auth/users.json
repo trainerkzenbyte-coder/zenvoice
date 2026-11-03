@@ -1,0 +1,25 @@
+{
+ "sugi": {
+  "name": "sugi",
+  "role": "admin",
+  "password": "scrypt$RF7qMSUWQ/5gR+IT6Yty9g==$U/TbDDz6oDAhpzR1xXuUW0qaLerqz4lxupjVR+7tEwY=",
+  "created": "2026-10-31 16:55",
+  "created_by": "owner",
+  "totp": "WL7XJBM5LNG7OOMTHX2XNRPFFR4DMUXN"
+ },
+ "suguna": {
+  "name": "suguna",
+  "role": "recruiter",
+  "password": "scrypt$6No4V5ATdqOnkuVOOEzksw==$tzNhiS7fpW0qDdKOAZvcS3sBS64yKdSgRa6qp5uRLe0=",
+  "created": "2026-10-31 17:14",
+  "created_by": "owner",
+  "last_login": "2026-10-31 21:52"
+ },
+ "sounder": {
+  "name": "Sounder",
+  "role": "recruiter",
+  "password": "scrypt$Q9Kzyra6cwoCaKBFs69jSg==$xhRi9QoBpK5Um0aQsmAPCd4WOtWLXKlI7nDu6pjpiTk=",
+  "created": "2026-10-31 17:30",
+  "created_by": "owner"
+ }
+}

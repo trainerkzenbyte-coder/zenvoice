@@ -1,0 +1,31 @@
+# HTTPS front door. Caddy gets and renews a free Let's Encrypt certificate for
+# $DOMAIN automatically, and passes Vobiz's call traffic (including the call audio
+# WebSockets) to the agent container.
+#
+# Sprint 12: the console opens in the browser at https://$DOMAIN/ for signed-in people only:
+# recruiters (username + password + today's code) and admins (password + authenticator app).
+# ADMIN_TOKEN is refused from the internet; it works only through the SSH tunnel.
+{$DOMAIN} {
+	# Never public: server status, API docs.
+	@hidden {
+		path /status /docs* /redoc* /openapi.json
+	}
+	respond @hidden 404
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Frame-Options "DENY"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		Permissions-Policy "camera=(), geolocation=(), microphone=(self)"
+		-Server
+	}
+
+	# Everything else: Vobiz (/answer, /hangup, /stream-status, /transfer/..., /ws/<token>) and /health
+	reverse_proxy agent:8000
+
+	log {
+		output stdout
+		format console
+	}
+}

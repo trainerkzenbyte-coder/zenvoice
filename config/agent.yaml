@@ -1,0 +1,94 @@
+# Editable agent settings. Secrets do NOT go here — they live in .env.
+
+agent:
+  name: "suguna"                    # Name the agent introduces itself with
+  company: "Zenbyte"                # Spoken in the greeting
+  language: "en-IN"
+
+llm:
+  provider: "cerebras"              # or "groq". Both free tiers are too small for real calls: see notes
+  model: "gpt-oss-120b"             # Groq spells it "openai/gpt-oss-120b"
+  reasoning_effort: "medium"        # thinks a bit before answering: better memory and common sense
+                                    # (Cerebras is fast: ~0.1-0.3 s more than "low"; "low" if you need speed)
+  temperature: 0.6                  # natural, varied wording (0.35 sounds stiff)
+  max_output_tokens: 900            # room for thinking + a full spoken reply (the prompt keeps replies short)
+  first_word_timeout_secs: 4.0      # no first word in 4 s: ask again once (was 10 s: longer than the watchdog)
+  max_history_messages: 80          # remember the whole call word for word (a 15-min call is ~60-80 messages)
+
+stt:
+  provider: "sarvam"                # Sarvam Saaras v4 for English calls too (your paid key)
+  sarvam_mode: "transcribe"         # "codemix" if candidates mix Tamil words into English
+  sarvam_endpointing: "vad"         # Sarvam detects when the candidate speaks ("manual" = old way)
+  sarvam_silence_ms: 500            # pause that ends a sentence: 500 = quick replies; 400 = quicker but may
+                                    # cut people who pause mid-sentence; 700 = more patient
+  sarvam_min_speech_ms: 400         # ignore sounds shorter than this (coughs, clicks, fan bursts)
+  sarvam_vad_threshold: 0.5         # 0.5 normal; 0.6-0.7 = ignore more background noise
+  keyterms: ["Zenbyte", "Karthik", "Ashwartha", "mock interview", "placement", "consultancy", "fresher",
+             "MERN stack", "full stack", "Java", "Spring Boot", "Python", "JavaScript", "React", "Node.js",
+             "MongoDB", "Angular", "SQL", "testing", "automation", "DevOps", "AWS", "Azure", "data science",
+             "Salesforce", "MNC", "CTC", "LPA", "notice period", "Naukri", "LinkedIn", "Velachery",
+             "Vadavalli", "Coimbatore", "Chennai", "Bangalore", "Pune", "virtual", "online"]
+  corrections:
+    - {heard: "vela cherry", write: "Velachery"}
+    - {heard: "vada valli", write: "Vadavalli"}
+    - {heard: "month stack|most stack|mass stack|must stack|mon stack|man stack", write: "MERN stack"}
+
+tts:
+  provider: "sarvam"
+  voice: "sarvam:ritu"
+  speed: 1.05
+  sarvam_min_buffer: 30
+
+knowledge:
+  mode: "retrieve"                  # search the whole knowledge base per turn ("full" = pin everything, old way)
+  pinned_max_chars: 3000            # FAQs always in the prompt (exact answers to common questions)
+  top_k: 4                          # passages added for each thing the candidate says
+  chunk_chars: 700                  # passage size
+  max_turn_chars: 2800              # cap on knowledge added per turn
+  tool: true                        # AI can also call search_knowledge itself
+  max_chars: 8000                   # only used in "full" mode
+
+call_limits:
+  max_call_seconds: 1500
+  silence_hangup_seconds: 15
+  reply_watchdog_secs: 7            # how long before the watchdog steps in (retry first, then a short line)
+  calling_hours: ["09:00", "21:00"]
+  max_attempts: 3
+  max_turns: 250
+
+phone:
+  ring_timeout_secs: 60
+
+resume:
+  enabled: true
+  window_hours: 48
+  prompt_file: "callback_screening.txt"
+  last_lines: 8
+  outcomes: ["dropped", "callback_requested", "other"]
+  greeting: "Hi {candidate_name}, it's {agent_name} from {company} again. Sorry, our call got cut earlier. Is now a good time to continue?"
+
+turn:
+  protect_greeting: true            # the opening line always plays in full (a "hello" over it is ignored)
+  mode: "smart"
+  vad_stop_secs: 0.2                # Pipecat's recommended value (was 0.5: slow replies)
+  vad_start_secs: 0.15              # was 0.05: breaths and clicks counted as speech
+  vad_confidence: 0.7               # was 0.5: background noise counted as speech
+  vad_min_volume: 0.5               # was 0.25: far-away voices and TV counted as speech
+  smart_turn_max_wait_secs: 1.2     # max wait when a sentence sounds unfinished
+  smart_turn_cpu_threads: 2
+  speech_timeout_secs: 0.6
+  interrupt_min_words: 2
+
+audio:
+  input_device_index: 1
+  output_device_index: null
+  voice_gate_db: 20
+
+logging:
+  verbose: true
+
+data:
+  retention_days: 90
+
+recording:
+  enabled: true

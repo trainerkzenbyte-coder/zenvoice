@@ -1,0 +1,84 @@
+# Automated call-flow tests: an AI plays each candidate, Priya runs the real script + tools.
+# Checks:
+#   end_reason:  what Priya must pass to end_call (or null = she must NOT hang up before max_turns)
+#   callback:    expected callback "day_offset" (0 = today, 1 = tomorrow...) and "hour", or false
+#   outcome:     expected call_outcome after extraction
+#   data:        extracted values to check (numbers within 0.05)
+# Test clock: Monday 5 Oct 2026, 10:00 India time.
+
+interested_complete:
+  name: Karthik
+  persona: >
+    You are Karthik, a senior software engineer at Infosys in Chennai. Total experience 5 years,
+    4 years in Java and Spring Boot. Current CTC 9.5 lakhs, expected 14 lakhs, notice period 60 days.
+    You are interested in the role. Answer each question briefly and confirm when she reads back.
+  end_reason: completed
+  callback: false
+  outcome: completed
+  data: {total_experience_years: 5, current_ctc_lpa: 9.5, expected_ctc_lpa: 14, notice_period_days: 60}
+
+busy_callback:
+  name: Vignesh
+  persona: >
+    You are Vignesh. You are in a meeting and cannot talk now. When asked, say "call me tomorrow
+    after 6 pm". Confirm when she repeats the time. Do not discuss the job.
+  end_reason: callback_requested
+  callback: {day_offset: 1, hour: 18}
+  outcome: callback_requested
+
+callback_outside_hours:
+  name: Sneha
+  persona: >
+    You are Sneha and you are busy right now. When asked for a callback time, first say "call me at
+    11 pm tonight". If she says that time is not possible, agree to "tomorrow at 10 in the morning".
+  end_reason: callback_requested
+  callback: {day_offset: 1, hour: 10}
+  outcome: callback_requested
+
+not_interested:
+  name: Meena
+  persona: >
+    You are Meena. You are happy in your current job and not interested in any change. Say so
+    politely. If asked about future roles, say no thanks.
+  end_reason: not_interested
+  callback: false
+  outcome: not_interested
+
+wrong_person:
+  name: Suresh
+  persona: >
+    You are Suresh's brother, answering his phone. Suresh is not at home. If asked when to reach
+    him, say "try in the evening". You don't know anything about his job.
+  end_reason: wrong_person
+  callback: false
+  outcome: wrong_person
+
+do_not_call:
+  name: Ganesh
+  persona: >
+    You are Ganesh and you are annoyed by recruitment calls. Immediately tell her to stop calling and
+    remove your number from their list.
+  end_reason: do_not_call
+  callback: false
+  outcome: do_not_call
+
+tamil_callback:
+  name: Lakshmi
+  persona: >
+    You are Lakshmi and you are more comfortable in Tamil. Ask if she can speak Tamil. When offered,
+    say you want a Tamil-speaking person to call you, and give "tomorrow at 11 am" as the time.
+  end_reason: language_barrier
+  callback: {day_offset: 1, hour: 11}
+  outcome: language_barrier
+
+salary_question:
+  name: Deepak
+  persona: >
+    You are Deepak, Java developer at Wipro, 4 years experience, current CTC 8 lakhs, expected 12,
+    notice 30 days. You are interested, but first ask "what is the salary budget for this role?".
+    Then answer her questions briefly.
+  end_reason: completed
+  callback: false
+  outcome: completed
+  forbid_bot_numbers_near: [budget]   # Priya must not invent a budget figure
+  data: {current_ctc_lpa: 8, expected_ctc_lpa: 12, notice_period_days: 30}

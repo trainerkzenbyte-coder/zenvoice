@@ -1,0 +1,52 @@
+{
+  "description": "Refuses to share CTC; must not be guessed",
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hi, this is Priya from Zenbyte. Is this Deepak?"
+    },
+    {
+      "role": "user",
+      "text": "Yes, tell me."
+    },
+    {
+      "role": "bot",
+      "text": "Are you open to a Java Developer role?"
+    },
+    {
+      "role": "user",
+      "text": "Maybe, depends on the package."
+    },
+    {
+      "role": "bot",
+      "text": "What is your current CTC?"
+    },
+    {
+      "role": "user",
+      "text": "I'd prefer not to share that on a call."
+    },
+    {
+      "role": "bot",
+      "text": "No problem. What is your notice period?"
+    },
+    {
+      "role": "user",
+      "text": "Ninety days."
+    },
+    {
+      "role": "bot",
+      "text": "Thank you Deepak."
+    },
+    {
+      "role": "user",
+      "text": "Okay."
+    }
+  ],
+  "expected": {
+    "call_outcome": "completed",
+    "interested": "maybe",
+    "current_ctc_lpa": null,
+    "expected_ctc_lpa": null,
+    "notice_period_days": 90
+  }
+}

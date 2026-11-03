@@ -1,0 +1,149 @@
+{
+  "call_id": "a1199a33-7249-447e-a6e4-d0ff284e3585",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "a1199a33-7249-447e-a6e4-d0ff284e3585.wav",
+  "started_at": "2026-10-31 13:24:55",
+  "ended_at": "2026-10-31 13:26:56",
+  "duration_secs": 120,
+  "end_reason": "ended by candidate",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "candidate_confirmed": true
+    },
+    "summary": "The call connected with the candidate and confirmed their identity, but the conversation was incoherent and eventually dropped due to communication difficulties.",
+    "recruiter_notes": "The candidate gave unrelated answers and the call was disconnected before screening could take place.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [],
+    "ended_by": "candidate"
+  },
+  "latency": {
+    "turns": 6,
+    "p50_ms": 2398,
+    "p95_ms": 7488,
+    "worst_ms": 7488,
+    "median_turn_wait_ms": 1544,
+    "median_llm_ms": 482,
+    "median_voice_ms": 267,
+    "first_audio_ms": 4438,
+    "turn_ms": [
+      2409,
+      2212,
+      2541,
+      2270,
+      2387,
+      7488
+    ],
+    "tokens": {
+      "prompt": 28462,
+      "completion": 1360,
+      "total": 29822,
+      "requests": 8
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793433300.1173446
+    },
+    {
+      "role": "user",
+      "text": "Yeah, term.",
+      "t": 1793433306.6126995
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Great! Hi, I'm Suguna from Zenbyte Technologies. Actually, I am calling regarding your job search. Do you have a quick minute?",
+      "t": 1793433307.7862642
+    },
+    {
+      "role": "user",
+      "text": "AI order maker.",
+      "t": 1793433319.149816
+    },
+    {
+      "role": "bot",
+      "text": "Your voice is breaking, I can't get you. Do you have a quick minute?",
+      "t": 1793433320.1448896
+    },
+    {
+      "role": "user",
+      "text": "Yeah, tell me. We can talk.",
+      "t": 1793433325.7272484
+    },
+    {
+      "role": "bot",
+      "text": "Okay, great. Could you tell me what your current role and tech stack are?",
+      "t": 1793433326.9940717
+    },
+    {
+      "role": "user",
+      "text": "Actually, I haven't eaten.",
+      "t": 1793433334.6922362
+    },
+    {
+      "role": "bot",
+      "text": "Got it. Could you tell me what your current role and tech stack are?",
+      "t": 1793433335.635312
+    },
+    {
+      "role": "user",
+      "text": "Okay.",
+      "t": 1793433343.7629585
+    },
+    {
+      "role": "bot",
+      "text": "Sure, could you share your current role and the tech stack you work with?",
+      "t": 1793433344.7524543
+    },
+    {
+      "role": "user",
+      "text": "I'm in trouble.",
+      "t": 1793433351.253042
+    },
+    {
+      "role": "bot",
+      "text": "Okay, I understand. How many years of total experience do you have, and where are you based right now?",
+      "t": 1793433352.1739714
+    },
+    {
+      "role": "user",
+      "text": "Java.",
+      "t": 1793433355.5413866
+    },
+    {
+      "role": "bot",
+      "text": "Got it. How many years of total experience do you have?",
+      "t": 1793433356.5735161
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793433374.850204
+    },
+    {
+      "role": "user",
+      "text": "Hello hello hello.",
+      "t": 1793433385.5258439
+    },
+    {
+      "role": "bot",
+      "text": "Okay, I hear you. Could you tell me how many years of experience you have?",
+      "t": 1793433386.5119476
+    },
+    {
+      "role": "bot",
+      "text": "Hello, are you still there?",
+      "t": 1793433405.5385516
+    }
+  ]
+}

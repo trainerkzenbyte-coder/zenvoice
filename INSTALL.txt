@@ -1,0 +1,21 @@
+background-voices-fix: crowd / traffic / lecture-hall voices no longer interrupt the agent
+
+FILES
+  app/noise_guard.py                    voice gate (as before) + NEW background speech filter
+  deploy/patch_background_filter.py     adds the filter to your app/phone_bot.py (checks first, keeps a backup)
+
+INSTALL ON THE SERVER
+  cd ~/voice-agent
+  unzip -o background-voices-fix.zip
+  python3 deploy/patch_background_filter.py
+  docker compose up -d --build
+
+No agent.yaml change needed (it's on by default). Optional tuning under audio: in config/agent.yaml:
+  background_filter: true          # false = switch off
+  background_near_db: 10           # 8 = stricter (ignores more background), 14 = gentler
+  background_min_speech_ms: 200    # raise to 300 if short noises still get through
+
+TEST
+  docker compose logs -f agent | grep -E "\[noise\]|YOU|candidate cut in"
+  Call from a noisy place. Background talk shows as "[noise] ignored background speech" or
+  "[noise] background voices, not stopping the agent". Your own speech still shows as "YOU :".

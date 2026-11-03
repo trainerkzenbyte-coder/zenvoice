@@ -1,0 +1,524 @@
+{
+  "call_id": "69a2973a-dffd-48a1-80e3-54d4014975d4",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "69a2973a-dffd-48a1-80e3-54d4014975d4.wav",
+  "started_at": "2026-11-03 13:04:44",
+  "ended_at": "2026-11-03 13:15:26",
+  "duration_secs": 640,
+  "end_reason": "ended by agent (completed)",
+  "outcome": {
+    "call_outcome": "not_interested",
+    "data": {
+      "candidate_confirmed": true,
+      "interested": "no",
+      "current_location": "Pune",
+      "open_to_relocation": "no",
+      "preferred_language": "english"
+    },
+    "summary": "Senthil inquired about our placement services and resume building features. However, he is currently located in Pune and unable to travel to Chennai or Coimbatore to sign the in-person agreement, and ultimately declined to proceed.",
+    "recruiter_notes": "Candidate is based in Pune and cannot travel for the mandatory in-person agreement signing at the Chennai or Coimbatore office.",
+    "checks": [
+      "Priya ended the call as 'completed' but the transcript reads as 'not_interested', please verify"
+    ],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [
+      {
+        "t": "13:15:20",
+        "action": "end_call",
+        "reason": "completed"
+      }
+    ],
+    "ended_by": "agent"
+  },
+  "latency": {
+    "turns": 34,
+    "p50_ms": 2369,
+    "p95_ms": 3162,
+    "worst_ms": 4932,
+    "median_turn_wait_ms": 1527,
+    "median_llm_ms": 536,
+    "median_voice_ms": 277,
+    "first_audio_ms": 2483,
+    "turn_ms": [
+      2107,
+      2265,
+      2322,
+      2276,
+      2360,
+      2388,
+      2475,
+      2917,
+      2773,
+      2179,
+      2357,
+      2249,
+      2517,
+      2199,
+      2565,
+      2411,
+      3125,
+      2226,
+      2670,
+      2398,
+      4932,
+      3162,
+      2181,
+      2893,
+      2269,
+      2377,
+      2290,
+      3274,
+      2713,
+      2203,
+      2523,
+      402,
+      2098,
+      2180
+    ],
+    "tokens": {
+      "prompt": 156251,
+      "completion": 8466,
+      "total": 164717,
+      "requests": 38
+    }
+  },
+  "transcript": [
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793691286.3625388
+    },
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793691287.3395758
+    },
+    {
+      "role": "user",
+      "text": "Yeah, I know.",
+      "t": 1793691293.915854
+    },
+    {
+      "role": "bot",
+      "text": "Got it. So as I mentioned, you’d just need to drop by our Chennai or Coimbatore office for a day to sign the agreement and submit your documents. Does that sound okay?",
+      "t": 1793691294.9147174
+    },
+    {
+      "role": "user",
+      "text": "Before that, can you please explain to me how I will get ready into a call and all?",
+      "t": 1793691306.9235718
+    },
+    {
+      "role": "bot",
+      "text": "Sure thing. We’ll send you the HR contacts daily, you’ll email them as instructed, and when you get an interview invite you tell our backend team—they’ll schedule the interview and show you the exact reply to copy. Does that make sense?",
+      "t": 1793691308.0097055
+    },
+    {
+      "role": "user",
+      "text": "Okay, so you will send us the HR contact to me and I want to send you to the HR, right?",
+      "t": 1793691330.8280656
+    },
+    {
+      "role": "bot",
+      "text": "Exactly—once we share the relevant HR email IDs, you’ll email them each day, and when you get an interview invite just let our backend team know; we’ll handle scheduling and give you the exact reply to send. Does that work for you?",
+      "t": 1793691331.8455174
+    },
+    {
+      "role": "user",
+      "text": "Great, great, great. Okay, so how will you get all those HR details and all?",
+      "t": 1793691352.184977
+    },
+    {
+      "role": "bot",
+      "text": "We pull the HR contacts from the companies we partner with—MNCs and startups that have openings matching your SAP experience—and bundle them for you. You’ll get that list and we’ll guide you on how to email each day. Does that sound clear?",
+      "t": 1793691353.2708519
+    },
+    {
+      "role": "user",
+      "text": "Okay, great, great.",
+      "t": 1793691370.2194064
+    },
+    {
+      "role": "user",
+      "text": "Hmm.",
+      "t": 1793691371.7896478
+    },
+    {
+      "role": "user",
+      "text": "Fine. What help you will do for me apart from my interview scheduling? What other help you will do for me?",
+      "t": 1793691380.0757296
+    },
+    {
+      "role": "bot",
+      "text": "We’ll improve your resume and Naukri profile, run our automated job applications, and give live interview support to help you clear technical, manager and client rounds. Does that make sense?",
+      "t": 1793691381.1361582
+    },
+    {
+      "role": "user",
+      "text": "Okay, how will you improve the resume and the LinkedIn profile for me?",
+      "t": 1793691390.8420272
+    },
+    {
+      "role": "bot",
+      "text": "We’ll run your resume through our AI‑powered builder, polish the format, add keywords and highlight your SAP projects, then do the same for your LinkedIn and Naukri profile to boost visibility. Does that work for you?",
+      "t": 1793691391.9194872
+    },
+    {
+      "role": "user",
+      "text": "Okay, A Power Builder means you yourself will help me to build the resume as per it to me or?",
+      "t": 1793691413.4606147
+    },
+    {
+      "role": "bot",
+      "text": "Yes, we’ll use our AI‑powered builder plus our team to refine your resume, add the right keywords and showcase your SAP projects. Does that sound good?",
+      "t": 1793691414.4513438
+    },
+    {
+      "role": "user",
+      "text": "Okay, okay. So apart from this, what are the features I can able to experience?",
+      "t": 1793691429.4671528
+    },
+    {
+      "role": "bot",
+      "text": "You’ll get our AI‑powered resume builder, Naukri profile booster, automated job‑application system, multiple interview scheduling, live interview support, and a dedicated technical team to guide you. Does that make sense?",
+      "t": 1793691430.7907298
+    },
+    {
+      "role": "user",
+      "text": "I will give you the automated job application.",
+      "t": 1793691442.4965456
+    },
+    {
+      "role": "bot",
+      "text": "Got it. Do you want us to start the automated job application on your behalf?",
+      "t": 1793691443.4298363
+    },
+    {
+      "role": "user",
+      "text": "Yes, could you please explain regarding that automated job application system means what?",
+      "t": 1793691455.079566
+    },
+    {
+      "role": "bot",
+      "text": "Our automated job‑application system uses your AI‑enhanced resume to submit daily to all the HR contacts we share that match your SAP background, and it tracks any interview invites for you. Would you like us to kick that off now?",
+      "t": 1793691456.0485952
+    },
+    {
+      "role": "user",
+      "text": "Okay, your automated job application system itself sends the mail to all HR and inform like you have you got this schedule like this.",
+      "t": 1793691481.3390481
+    },
+    {
+      "role": "bot",
+      "text": "We actually give you a list of the relevant HR email IDs and walk you through how to email them each day. When an HR replies with an interview invite, you let our backend team know, and we’ll schedule the interview and show you the exact reply to send. Does that sound clear?",
+      "t": 1793691482.4561508
+    },
+    {
+      "role": "user",
+      "text": "Okay, so what else you will do apart from these things?",
+      "t": 1793691503.4166274
+    },
+    {
+      "role": "bot",
+      "text": "Besides the resume boost and automated applications, we give you live interview support—coaching you through technical, manager and client rounds—and help with any onboarding paperwork once you get an offer. Does that cover what you were looking for?",
+      "t": 1793691504.460775
+    },
+    {
+      "role": "user",
+      "text": "Okay, what does the onboarding paperwork contain?",
+      "t": 1793691523.2701893
+    },
+    {
+      "role": "bot",
+      "text": "Our HR operations team handles the onboarding paperwork—things like your personal details, document verification, BGV and offer acceptance. Would you like me to have them share the exact checklist with you?",
+      "t": 1793691524.2402618
+    },
+    {
+      "role": "user",
+      "text": "Yeah, you can send me at the end of this call.",
+      "t": 1793691540.053248
+    },
+    {
+      "role": "user",
+      "text": "About in other than this what you have like multiple multiple scheduling something you have said no what do you mean by that?",
+      "t": 1793691548.3136194
+    },
+    {
+      "role": "bot",
+      "text": "Sure, we’ll send you the bulk HR email list on WhatsApp right after this call. Our backend team can line up multiple interview slots with different companies and will show you the exact reply to send for each invitation. Does that work for you?",
+      "t": 1793691549.6149473
+    },
+    {
+      "role": "user",
+      "text": "What is in the multiple interview slots?",
+      "t": 1793691566.7437446
+    },
+    {
+      "role": "bot",
+      "text": "Multiple interview slots mean we’ll line up several interview appointments with different companies—each could be a technical round, a manager round or a client round—so you have options and don’t miss any opportunity. Does that sound good?",
+      "t": 1793691567.928239
+    },
+    {
+      "role": "user",
+      "text": "No, I didn't understand.",
+      "t": 1793691585.5108683
+    },
+    {
+      "role": "bot",
+      "text": "We’ll arrange a few interview appointments with different companies—each could be a technical, manager or client round—so you can pick the slot that works best for you. Does that make sense?",
+      "t": 1793691586.5216742
+    },
+    {
+      "role": "user",
+      "text": "Okay, but at the time I couldn't able to attend all those things, right?",
+      "t": 1793691602.2806966
+    },
+    {
+      "role": "bot",
+      "text": "We can schedule everything around your availability—most steps can be done virtually, and we’ll arrange the interview slots at times that suit you. Should we go ahead and send the HR contact list now?",
+      "t": 1793691603.3521247
+    },
+    {
+      "role": "user",
+      "text": "Yeah, oh, fine.",
+      "t": 1793691618.6674209
+    },
+    {
+      "role": "user",
+      "text": "Other things like I want to know regarding the office location and all.",
+      "t": 1793691627.3827164
+    },
+    {
+      "role": "bot",
+      "text": "Our Chennai office is at 3rd Floor, Ashwartha Tower, Plot 26, 5th Main Rd, Vijaya Nagar, Velachery, Chennai 600042, and the Coimbatore office is opposite Vadavalli High School, Vadavalli, Coimbatore 641007.",
+      "t": 1793691628.6274574
+    },
+    {
+      "role": "user",
+      "text": "Okay, uh, okay, fine. uh, what else uh I want to know?",
+      "t": 1793691652.169589
+    },
+    {
+      "role": "bot",
+      "text": "Is there anything specific you’d like details on—fees, timeline, or how payments work?",
+      "t": 1793691653.2659557
+    },
+    {
+      "role": "user",
+      "text": "Yeah, explain me about the payment. If it's small luggage, then they have a two-wheeler option, and if it's big luggage, then they have trucks too. Porter's delivery option.",
+      "t": 1793691671.0548363
+    },
+    {
+      "role": "user",
+      "text": "Yes, yes.",
+      "t": 1793691672.7816644
+    },
+    {
+      "role": "bot",
+      "text": "We don’t charge any advance or hidden fees—payment is only due after you receive the offer letter or join the company. Does that answer your question?",
+      "t": 1793691673.8009963
+    },
+    {
+      "role": "user",
+      "text": "Yeah, okay. So after getting the job, how long I want to stay?",
+      "t": 1793691689.9270873
+    },
+    {
+      "role": "bot",
+      "text": "Our HR operations team will go over any post‑joining commitments during onboarding. I can have them share those details with you. Anything else you’d like to know?",
+      "t": 1793691691.9210737
+    },
+    {
+      "role": "user",
+      "text": "Actually, are you getting a job? How much payment I want to take?",
+      "t": 1793691712.1228635
+    },
+    {
+      "role": "bot",
+      "text": "We don’t guarantee a job—our fee is only payable after you receive an offer or join the company. I can share the fee‑structure PDF on WhatsApp if that works for you.",
+      "t": 1793691713.1366305
+    },
+    {
+      "role": "user",
+      "text": "No no no no, just tell me the average amount how much I want to pay.",
+      "t": 1793691730.4543474
+    },
+    {
+      "role": "bot",
+      "text": "We don’t take any payment up front—fees are only due after you receive an offer or join, and the exact fee structure is in a PDF we can share on WhatsApp. Should I send that to you now?",
+      "t": 1793691731.5361981
+    },
+    {
+      "role": "user",
+      "text": "Hi friends, my name is Senthil. Welcome to our channel speaking. How are you all? Hope you are good. Okay. So in this.",
+      "t": 1793691741.1083212
+    },
+    {
+      "role": "bot",
+      "text": "Hi Senthil, I’m good, thanks! How can I help you today?",
+      "t": 1793691742.1299562
+    },
+    {
+      "role": "user",
+      "text": "To put your family.",
+      "t": 1793691751.805655
+    },
+    {
+      "role": "user",
+      "text": "Okay.",
+      "t": 1793691752.9243557
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, could you clarify what you’d like to know?",
+      "t": 1793691753.1926935
+    },
+    {
+      "role": "user",
+      "text": "Do you want to speak English?",
+      "t": 1793691755.4446514
+    },
+    {
+      "role": "user",
+      "text": "No.",
+      "t": 1793691757.1637247
+    },
+    {
+      "role": "user",
+      "text": "Yeah.",
+      "t": 1793691758.5366523
+    },
+    {
+      "role": "user",
+      "text": "To you.",
+      "t": 1793691763.1763682
+    },
+    {
+      "role": "bot",
+      "text": "Sure thing. What specific information can I help you with right now?",
+      "t": 1793691764.171691
+    },
+    {
+      "role": "user",
+      "text": "No, it has continued the process.",
+      "t": 1793691773.5242157
+    },
+    {
+      "role": "bot",
+      "text": "Great, we’ll move ahead. The next step is to visit our Chennai or Coimbatore office for a day to sign the agreement and hand over your documents. Does that work for you?",
+      "t": 1793691774.6380584
+    },
+    {
+      "role": "user",
+      "text": "But I cannot really travel that long to find the agreement alone.",
+      "t": 1793691790.1834695
+    },
+    {
+      "role": "user",
+      "text": "Is there any possibility to do it virtually?",
+      "t": 1793691795.323678
+    },
+    {
+      "role": "bot",
+      "text": "I’m afraid the agreement has to be signed in person at one of our offices—either the Velachery location in Chennai or the Vadavalli office in Coimbatore. We can schedule a convenient time for you to drop by. Does that work?",
+      "t": 1793691796.3881202
+    },
+    {
+      "role": "user",
+      "text": "I am afraid the agreement has to be signed in person at one of our offices. What does that mean?",
+      "t": 1793691816.8370795
+    },
+    {
+      "role": "bot",
+      "text": "It means you’ll need to visit our Velachery office in Chennai or the Vadavalli office in Coimbatore for one day to review and sign the agreement and hand over your documents. Does that work for you?",
+      "t": 1793691818.8207972
+    },
+    {
+      "role": "user",
+      "text": "Actually, I am in a loan now. I can't pay the salary. That's a loan.",
+      "t": 1793691835.1112
+    },
+    {
+      "role": "bot",
+      "text": "We don’t take any advance payment—fees are only due after you receive an offer or join the company. Does that address your concern?",
+      "t": 1793691836.161473
+    },
+    {
+      "role": "user",
+      "text": "I said I am in Pune. I cannot able to travel that long.",
+      "t": 1793691844.1636648
+    },
+    {
+      "role": "bot",
+      "text": "I understand you’re in Pune, but the agreement needs to be signed in person at either our Chennai or Coimbatore office. Could you arrange a visit to one of those locations?",
+      "t": 1793691845.1372097
+    },
+    {
+      "role": "user",
+      "text": "Hello.",
+      "t": 1793691867.8722064
+    },
+    {
+      "role": "bot",
+      "text": "Hi Senthil, this is suguna from Zenbyte. Can you arrange a visit to our Chennai or Coimbatore office to sign the agreement?",
+      "t": 1793691869.0385017
+    },
+    {
+      "role": "user",
+      "text": "No, I can't.",
+      "t": 1793691874.5549815
+    },
+    {
+      "role": "bot",
+      "text": "I understand it’s difficult to travel right now. Would you like to schedule a call later to discuss possible alternatives?",
+      "t": 1793691875.7606144
+    },
+    {
+      "role": "user",
+      "text": "No, no, really actually, but.",
+      "t": 1793691888.1686285
+    },
+    {
+      "role": "bot",
+      "text": "I understand traveling is tough—while the agreement does need an in‑person signing, we do offer virtual interview support for eligible candidates once that’s done. Would you like to set a later date to visit the office, or discuss other options?",
+      "t": 1793691889.1868825
+    },
+    {
+      "role": "user",
+      "text": "Check for other options.",
+      "t": 1793691890.571683
+    },
+    {
+      "role": "bot",
+      "text": "We do offer a virtual interview‑support option for eligible candidates, though the agreement still needs to be signed in person at our Chennai or Coimbatore office. Would you like me to check if you qualify for the virtual support?",
+      "t": 1793691891.636683
+    },
+    {
+      "role": "user",
+      "text": "Okay, I'll think about that.",
+      "t": 1793691908.4987543
+    },
+    {
+      "role": "bot",
+      "text": "Sure, take your time. Would you like me to send the office address and HR contact list to you on WhatsApp now?",
+      "t": 1793691909.5494769
+    },
+    {
+      "role": "user",
+      "text": "Yes, yeah.",
+      "t": 1793691919.1574602
+    },
+    {
+      "role": "bot",
+      "text": "Thank you for your time. A recruiter will share the next steps. Have a great day!",
+      "t": 1793691920.2443082
+    }
+  ]
+}

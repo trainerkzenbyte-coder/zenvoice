@@ -1,0 +1,125 @@
+{
+  "call_id": "4b9118f3-30d3-4100-a33b-2685fe7b0814",
+  "candidate_name": "sugi",
+  "phone": "916382653677",
+  "ref": "",
+  "role": "",
+  "agent": "suguna",
+  "from_number": "918065354461",
+  "direction": "outbound",
+  "recording": "4b9118f3-30d3-4100-a33b-2685fe7b0814.wav",
+  "started_at": "2026-11-02 16:15:55",
+  "ended_at": "2026-11-02 16:17:02",
+  "duration_secs": 65,
+  "end_reason": "ended by candidate",
+  "outcome": {
+    "call_outcome": "dropped",
+    "data": {
+      "candidate_confirmed": true,
+      "preferred_language": "english"
+    },
+    "summary": "The call connected with the candidate, who confirmed their identity, but technical issues with audio quality prevented screening. The conversation ended early due to the communication barrier caused by the broken voice.",
+    "recruiter_notes": "Call dropped due to severe audio break-up and network issues. The candidate was unable to hear properly.",
+    "checks": [],
+    "user_sentiment": "neutral",
+    "extraction_model": "gemini-3.5-flash-lite",
+    "actions": [],
+    "ended_by": "candidate"
+  },
+  "latency": {
+    "turns": 6,
+    "p50_ms": 2210,
+    "p95_ms": 2319,
+    "worst_ms": 2319,
+    "median_turn_wait_ms": 1443,
+    "median_llm_ms": 518,
+    "median_voice_ms": 266,
+    "first_audio_ms": 4476,
+    "turn_ms": [
+      333,
+      2124,
+      2222,
+      2198,
+      2319,
+      2307
+    ],
+    "tokens": {
+      "prompt": 21126,
+      "completion": 946,
+      "total": 22072,
+      "requests": 6
+    }
+  },
+  "transcript": [
+    {
+      "role": "bot",
+      "text": "Hello, this is suguna from Zenbyte. Am I speaking with sugi?",
+      "t": 1793616360.446767
+    },
+    {
+      "role": "user",
+      "text": "Yeah, yeah, tell me.",
+      "t": 1793616367.5011044
+    },
+    {
+      "role": "bot",
+      "text": "Great! Hi, I'm Suguna from Zenbyte Technologies. Actually, I am calling regarding your job search. Do you have a quick minute?",
+      "t": 1793616368.57726
+    },
+    {
+      "role": "user",
+      "text": "Mm yeah come in.",
+      "t": 1793616379.8583198
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Could you tell me what your current role is and what tech stack you’re working with?",
+      "t": 1793616380.807134
+    },
+    {
+      "role": "user",
+      "text": "Why is this company breaking?",
+      "t": 1793616391.3539903
+    },
+    {
+      "role": "bot",
+      "text": "Sorry, could you clarify what you mean by “breaking”?",
+      "t": 1793616392.3677502
+    },
+    {
+      "role": "user",
+      "text": "Your voices.",
+      "t": 1793616398.4237387
+    },
+    {
+      "role": "user",
+      "text": "Completely breaking.",
+      "t": 1793616401.0041664
+    },
+    {
+      "role": "bot",
+      "text": "Your voice is breaking, I can't get you. Could you repeat that, please?",
+      "t": 1793616402.0320485
+    },
+    {
+      "role": "user",
+      "text": "Actually your voice is breaking.",
+      "t": 1793616410.07116
+    },
+    {
+      "role": "bot",
+      "text": "Your voice is breaking, I can't get you. Could you say that again, please?",
+      "t": 1793616411.0259287
+    },
+    {
+      "role": "user",
+      "text": "I cannot give you.",
+      "t": 1793616412.8477926
+    },
+    {
+      "role": "bot",
+      "text": "Okay, okay. Could you share at least your current role or the tech stack you work with?",
+      "t": 1793616413.95476
+    }
+  ]
+}

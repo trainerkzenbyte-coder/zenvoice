@@ -1,0 +1,20 @@
+# Alert thresholds, edited from the console (MONITOR > Alerting).
+rules:
+- id: webhook_down
+  threshold: 1.0
+  enabled: true
+- id: gemini_errors
+  threshold: 3.0
+  enabled: true
+- id: sheet_outbox
+  threshold: 5.0
+  enabled: true
+- id: cpu
+  threshold: 85.0
+  enabled: true
+- id: batch_stopped
+  threshold: 1.0
+  enabled: true
+- id: pickup_low
+  threshold: 20.0
+  enabled: false
